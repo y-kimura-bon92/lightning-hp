@@ -1,0 +1,32 @@
+/* -----------------------------
+      philosophy 左画面
+--------------------------------- */
+.split-left__inner {
+  background-image: url(../img/company_main.jpg);
+  background-size: 100%;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 40%;
+}
+.catch_copy {
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+.catch_copy h1 {
+  font-weight: 700 !important;
+  text-align: center;
+}
+.catch_copy span {
+  font-size: 50%;
+}
+
+
+.model_gorilla_img {
+  border: 4px double #ddd;
+}

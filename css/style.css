@@ -1,0 +1,281 @@
+/* -----------------------------
+      company 左画面
+--------------------------------- */
+.split-left__inner {
+  background: url(../img/lightning_01.mp4);
+  background-size: 100%;
+  height: 100%;
+  width: 40%;
+}
+
+/* スライダー */
+.slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+/* 以下は必須 */
+.slider > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.slider > div > div {
+  flex: none;
+  background-repeat: no-repeat;
+}
+.slider > div img.slider-img {
+  display: none;
+}
+
+
+/* -----------------------------
+      topメインビジュアル のロゴjs
+--------------------------------- */
+._main_logo_animation {
+	opacity : 0;
+	visibility: hidden;
+	transition: 1.5s;
+	transform: translateY(80px);
+}
+/*アニメーション要素までスクロールした時のスタイル*/
+._main_logo_animation_active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+
+/* -----------------------------
+      topデザインコンテンツ
+--------------------------------- */
+/* 通信事業 */
+.img_content {
+  position: relative;
+}
+.left_content_img img,
+.right_content_img img {
+  width: 70%;
+}
+.right_content_text {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 4px 4px 4px 0 rgba(0,0,0,.2);
+  width: 50%;
+  height: 250px;
+}
+
+/* web デザイン */
+.right_content_img {
+  text-align: right;
+}
+.left_content_text {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 4px 4px 4px 0 rgba(0,0,0,.2);
+  width: 50%;
+  height: 250px;
+}
+
+/* デザインコンテンツのボタン */
+.img_content_btn a {
+  padding: 15px;
+  width: 30%;
+  border: 1px solid #0e192d;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  color: #0e192d;
+}
+.img_content_btn a:hover {
+  color: #fff !important;
+}
+.img_content_btn a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background-color: #0e192d;
+  z-index: -1;
+}
+.img_content_btn a:hover:before {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+/* その他事業の3カラムコンテンツ */
+.other_business_content {
+  background-color: #fffced;
+  padding: 20px;
+}
+.other_card_item {
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.1);
+  width: 96%;
+  margin-left: 2%;
+}
+.other_text_area {
+  height: 190px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/*アニメーション要素のスタイル*/
+._design_img_animation,
+._3column_effect {
+	opacity : 0;
+	visibility: hidden;
+	transition: 1.5s;
+	transform: translateY(80px);
+}
+/*アニメーション要素までスクロールした時のスタイル*/
+._design_img_animation_active,
+._3column_effect_active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+
+.box .boxInner {
+  opacity: 0;
+}
+.isPlay {
+  animation-name: play;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.8,0,.5,1);
+  position: relative;
+  opacity: 1 !important;
+  /* z-index: -1; */
+}
+  
+.isPlay:before {
+  animation-name: maskOut;
+  animation-duration: .5s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.8,0,.5,1);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:-1;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes play {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* @keyframes maskOut {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+} */
+@keyframes txtEffect {
+  100% {
+    opacity: .5;
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .d-flex {
+    display: block !important;
+  }
+  .right_content_text,
+  .left_content_text {
+    padding: 13px;
+  }
+} 
+
+
+
+
+/* -----------------------------
+      topフル幅画像コンテンツ
+--------------------------------- */
+.full_img_content {
+  background-image: url(../img/top_fullimg_bg.jpg);
+  background-size: 100%;
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0,0.2);
+}
+.full_img_2column {
+  padding: 70px 0;
+}
+/* ボタン */
+.full_img_btn_content {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #fff;
+  padding: 20px 0;
+  margin-left: -20px;
+  margin-right: 80px;
+  z-index: 2;
+}
+.full_img_btn_content:hover {
+  color: #000 !important;
+}
+.full_img_btn_content:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background-color: #fff;
+  z-index: -1;
+}
+.full_img_btn_content:hover:before {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* ボタン内のテキスト（タイトル） */
+.full_img_btn {
+  text-align: center;
+}
+/* ボタン内の区切り線 */
+hr {
+  margin: 1rem auto;
+  color: inherit;
+  width: 40%;
+  background-color: currentColor;
+  border: 0;
+  opacity: 1;
+}
+/* サブタイトル */
+.full_img_btn_b {
+  font-size: 18px;
+  text-align: center;
+}
+
+

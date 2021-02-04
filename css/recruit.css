@@ -1,0 +1,73 @@
+
+
+/* -----------------------------
+      recruit 左画面
+--------------------------------- */
+.split-left__inner {
+  background-image: url(../img/recruit_main.jpg);
+  background-size: 100%;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 40%;
+}
+.catch_copy {
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+.catch_copy h1 {
+  font-weight: 700 !important;
+  text-align: center;
+}
+.catch_copy span {
+  font-size: 50%;
+}
+
+
+/* -----------------------------
+      業務開始までの流れフロー
+--------------------------------- */
+.flow_text_area {
+  padding: 10px 5px;
+  background-color: #f9f9f9;
+  height: 190px;
+}
+.col-lg-3 {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/* -----------------------------
+      各デザインコンテンツ
+--------------------------------- */
+.about_content {
+  position: relative;
+}
+.about_card_content {
+  box-shadow: 4px 4px 4px 0 rgba(0,0,0,.2);
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  right: 0;
+  width: 50%;
+}
+.about_card_01 {
+  bottom: 60px;
+}
+.about_card_02 {
+  bottom: 76px;
+}
+.about_card_03 {
+  bottom: 100px;
+}
+.about_img_content {
+  width: 60%;
+}
+.about_list {
+  width: 2rem;
+}

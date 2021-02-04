@@ -1,0 +1,23 @@
+.slider {
+		width: 100vw;
+		height: 100vh;
+		position: relative;
+		overflow: hidden;
+	}
+	/* 以下は必須 */
+	.slider > div {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.slider > div > div {
+		flex: none;
+		background-repeat: no-repeat;
+	}
+	.slider > div img.slider-img {
+		display: none;
+	}

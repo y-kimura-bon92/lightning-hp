@@ -1,0 +1,43 @@
+
+
+/* -----------------------------
+      company 左画面
+--------------------------------- */
+.split-left__inner {
+  background-image: url(../img/company_main.jpg);
+  background-size: 100%;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 40%;
+}
+.catch_copy {
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+.catch_copy h1 {
+  font-weight: 700 !important;
+  text-align: center;
+}
+.catch_copy span {
+  font-size: 50%;
+}
+
+
+/* -----------------------------
+      テーブル
+--------------------------------- */
+tr {
+  border-style: hidden;
+}
+th {
+  width: 15%;
+}
+th, td {
+  padding-top: 10px !important;
+}
