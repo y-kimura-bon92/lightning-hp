@@ -124,6 +124,19 @@
   background: #fff;
 }
 
+/* 下層ページ見出し */
+.first_letter_design:first-letter {
+  font-size: 150%;
+  color:#7db4e6;
+}
+/* 下層ページ小見出し */
+.subpage_sub_h4 {
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+}
+
 
 /* -----------------------------
       footer

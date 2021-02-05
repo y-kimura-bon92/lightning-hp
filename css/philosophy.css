@@ -27,6 +27,14 @@
 }
 
 
+/* -----------------------------
+      企業理念
+--------------------------------- */
+.corporate_philosophy {
+  background-color: #e3eef8;
+}
+
 .model_gorilla_img {
   border: 4px double #ddd;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.1);
 }
