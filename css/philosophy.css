@@ -30,11 +30,20 @@
 /* -----------------------------
       企業理念
 --------------------------------- */
+/* 青色背景の代表あいさつ */
 .corporate_philosophy {
   background-color: #e3eef8;
+  padding: 3rem;
 }
-
+/* 代表イメージ画像 */
 .model_gorilla_img {
   border: 4px double #ddd;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.1);
+}
+
+@media screen and (max-width:768px) {
+  .corporate_philosophy {
+    background-color: #e3eef8;
+    padding: 1rem 0;
+  }
 }

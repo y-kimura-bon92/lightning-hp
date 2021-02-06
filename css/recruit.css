@@ -32,21 +32,32 @@
 /* -----------------------------
       業務開始までの流れフロー
 --------------------------------- */
+/* 各フローコンテンツ */
+.flow_content {
+  box-shadow: 4px 4px 4px 0 rgba(0,0,0,.2);
+}
+/* 各フローの見出し */
+.flow_title:first-letter {
+  font-size: 120%;
+  color: crimson;
+}
 .flow_text_area {
-  padding: 10px 5px;
+  padding: 18px;
   background-color: #f9f9f9;
   height: 190px;
+  line-height: 1.8rem;
 }
-.col-lg-3 {
+/* .col-lg-3 {
   padding-left: 6px;
   padding-right: 6px;
-}
+} */
 
 /* -----------------------------
       各デザインコンテンツ
 --------------------------------- */
 .about_content {
   position: relative;
+  display: flex;
 }
 .about_card_content {
   box-shadow: 4px 4px 4px 0 rgba(0,0,0,.2);
@@ -54,9 +65,8 @@
   background-color: #fff;
   padding: 20px;
   right: 0;
-  width: 50%;
 }
-.about_card_01 {
+/* .about_card_01 {
   bottom: 60px;
 }
 .about_card_02 {
@@ -64,10 +74,19 @@
 }
 .about_card_03 {
   bottom: 100px;
+} */
+.about_card_01 {
+  bottom: 10%;
 }
-.about_img_content {
+.about_card_02 {
+  bottom: 10%;
+}
+.about_card_03 {
+  bottom: 10%;
+}
+/* .about_img_content {
   width: 60%;
-}
+} */
 .about_list {
   width: 2rem;
 }

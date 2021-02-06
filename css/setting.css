@@ -18,6 +18,13 @@ p {
   margin-bottom: 0 !important;
 }
 
+@media screen and (max-width:768px) {
+  p {
+    font-size: 14px !important;
+  }
+}
+
+
 .container{
   width: 100%;
   padding-right: var(--bs-gutter-x,3rem);
@@ -28,8 +35,8 @@ p {
 @media screen and (max-width:768px) {
   .container{
     width: 100%;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-right: auto;
     margin-left: auto;
   }
