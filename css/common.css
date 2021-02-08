@@ -9,12 +9,12 @@
   display: table-cell;
 }
 .split-left{
-  width: 40%;
+  width: 35%;
   /* z-index: -10; */
 }
 .split-left__inner{
   position: fixed;
-  width: 40%;
+  width: 35%;
   /* z-index: -10; */
 }
 
@@ -29,25 +29,63 @@
 /* -----------------------------
       ヘッダー
 --------------------------------- */
-/* ロゴとの間の余白 */
-.header_nav {
-  margin-left: 20%;
-}
+/* ロゴの色 */
 .header_logo h2 a {
   color: #000;
 }
-.header_nav ul {
+
+/* ロゴとの間の余白 */
+.header_nav {
+  margin-left: 35%;
+}
+.gnav {
+  padding-top: 0.5rem;
   font-size: 80%;
   font-weight: bold;
+  display: flex;
+  height: 3rem;
+  margin: 0 auto;
+  width: 100vh;
 }
-.header_nav ul li a {
+.gnav > li {/*親階層のみ幅を25%にする*/
+  width: 20%;
+}
+.gnav li {
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+.gnav li a {
   color: #0e192d;
   transition: 0.5s;
+  height: 2rem;
+  line-height: 2rem;
+  text-decoration: none;
+  width: 100%;
 }
-.header_nav ul li a:hover {
+.gnav li a:hover {
   opacity: 0.7;
   transition: 0.5s;
 }
+
+/*子階層以降共通*/
+.dropdown_menu_pc {
+  background-color: #fff;
+  box-shadow: 4px 4px 4px 0 rgba(0,0,0,.2);
+}
+.dropdown_menu_pc li {
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.gnav li:hover > ul > li {
+  height: 2rem;
+  overflow: visible;
+}
+
+
 /* ヘッダーキャッチコピー */
 .jumbotron-fluid {
   background-image: url("../img/jumbotron_bg.jpg");

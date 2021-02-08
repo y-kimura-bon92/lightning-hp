@@ -65,28 +65,42 @@
   background-color: #fff;
   padding: 20px;
   right: 0;
-}
-/* .about_card_01 {
-  bottom: 60px;
-}
-.about_card_02 {
-  bottom: 76px;
-}
-.about_card_03 {
-  bottom: 100px;
-} */
-.about_card_01 {
   bottom: 10%;
+  transition: 0.7s;
 }
-.about_card_02 {
-  bottom: 10%;
+.about_card_content:hover {
+  opacity: 0.7;
+  transition: 0.7s;
 }
-.about_card_03 {
-  bottom: 10%;
-}
-/* .about_img_content {
-  width: 60%;
-} */
+
+/* デザインコンテンツのチェックマークアイコン */
 .about_list {
   width: 2rem;
+}
+
+/* 福利厚生の注意書き */
+.notes ul {
+  font-size: 80%;
+  color: crimson;
+  list-style-type: none;
+}
+
+.notes li{
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+@media screen and (max-width:768px) {
+  .about_card_content {
+    padding: 15px 10px;
+    bottom: -10%;
+  }
+  .about_card_content p {
+    font-size: 10px !important;
+  }
+
+  /* デザインコンテンツのチェックマークアイコン */
+  .about_list {
+    width: 1rem;
+  }
 }

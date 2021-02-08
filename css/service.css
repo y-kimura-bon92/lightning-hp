@@ -25,3 +25,36 @@
 .catch_copy span {
   font-size: 50%;
 }
+
+
+/* デザインコンテンツのボタン */
+.img_content_btn a {
+  padding: 15px;
+  width: 30%;
+  border: 1px solid #0e192d;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  color: #0e192d;
+}
+.img_content_btn a:hover {
+  color: #fff !important;
+}
+.img_content_btn a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background-color: #0e192d;
+  z-index: -1;
+}
+.img_content_btn a:hover:before {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}

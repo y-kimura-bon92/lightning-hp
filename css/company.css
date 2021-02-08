@@ -41,3 +41,17 @@ th {
 th, td {
   padding-top: 10px !important;
 }
+
+@media screen and (max-width:768px) {
+  table {
+    width: 100% !important;
+  }
+  th {
+    text-align: center;
+    background-color: #f5f5f5 !important;
+  }
+  th,td {
+    display: block;
+    width: auto;
+  }
+}
