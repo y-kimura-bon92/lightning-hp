@@ -2,7 +2,6 @@
       top 左画面
 --------------------------------- */
 .split-left__inner {
-  background: url(../img/lightning_01.mp4);
   background-size: 100%;
   height: 100%;
   width: 35%;
@@ -58,19 +57,19 @@
 .img_content {
   position: relative;
 }
-.left_content_img img,
-.right_content_img img {
-  width: 70%;
+.left_content_img,
+.right_content_img {
+  padding: 0;
 }
 .right_content_text {
   position: absolute;
   right: 0;
-  top: 20%;
+  top: 25%;
   padding: 30px;
   background-color: #fff;
   box-shadow: 4px 4px 4px 0 rgba(0,0,0,.2);
-  width: 50%;
-  height: 250px;
+  /* width: 50%; */
+  height: auto;
 }
 
 /* web デザイン */
@@ -80,12 +79,12 @@
 .left_content_text {
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 25%;
   padding: 30px;
   background-color: #fff;
   box-shadow: 4px 4px 4px 0 rgba(0,0,0,.2);
-  width: 50%;
-  height: 250px;
+  /* width: 50%; */
+  height: auto;
 }
 
 /* デザインコンテンツのボタン */
@@ -119,6 +118,12 @@
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
+@media screen and (max-width:768px) {
+  .img_content_btn a {
+    padding: 15px;
+    width: 80%;
+  }
+}
 
 /* その他事業の3カラムコンテンツ */
 .other_business_content {
@@ -149,6 +154,15 @@
 	opacity: 1;
 	visibility: visible;
 	transform: translateY(0);
+}
+@media screen and (max-width:768px) {
+  .other_business_content {
+    padding: 10px;
+  }
+  .other_card_item {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 
@@ -276,6 +290,21 @@ hr {
 .full_img_btn_b {
   font-size: 18px;
   text-align: center;
+}
+
+@media screen and (max-width:768px) {
+  .full_img_content {
+    background-size: cover;
+  }
+  /* ボタン */
+  .full_img_btn_content {
+    padding: 20px 0;
+    width: 80%;
+    margin: auto;
+  }
+  .full_img_2column {
+    padding: 40px 0;
+  }
 }
 
 

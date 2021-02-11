@@ -20,7 +20,17 @@
 
 @media screen and (max-width:768px) {
   .split-left{
-    display: none;
+    width: 100%;
+  }
+  .split-left__inner{
+    width: 100% !important;
+    z-index: -1;
+    opacity: 0.1;
+  }
+  /* 右画面 */
+  .split-item {
+    display: block;
+    
   }
 }
 
@@ -34,9 +44,10 @@
   color: #000;
 }
 
-/* ロゴとの間の余白 */
+/* ロゴとメニューの間の余白 */
 .header_nav {
-  margin-left: 35%;
+  margin-left: auto;
+  width: 100%;
 }
 .gnav {
   padding-top: 0.5rem;
@@ -45,10 +56,9 @@
   display: flex;
   height: 3rem;
   margin: 0 auto;
-  width: 100vh;
 }
 .gnav > li {/*親階層のみ幅を25%にする*/
-  width: 20%;
+  width: 15%;
 }
 .gnav li {
   list-style: none;
@@ -84,6 +94,35 @@
   height: 2rem;
   overflow: visible;
 }
+.gnav_sp {
+  display: none;
+}
+.nav-link {
+  display: flex !important;
+  justify-content: flex-end!important;
+}
+
+@media screen and (max-width:768px) {
+  .header_logo {
+    display: flex;
+    float: left;
+  }
+  .gnav{
+    display: none;
+  }
+  .gnav_sp {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .navbar-collapse {
+    width: 50%;
+  }
+  .navbar {
+    position: absolute;
+    right: 20px;
+}
+}
+
 
 
 /* ヘッダーキャッチコピー */
@@ -94,6 +133,12 @@
 .jumbotron .container {
   padding: 160px 60px;
 }
+@media screen and (max-width:768px) {
+  .jumbotron-fluid {
+    margin: 0 calc(50% - 50vw);
+  }
+}
+
 /* キャッチコピー下ロゴ */
 .jumbotron h3 {
   color: #fff;
@@ -111,7 +156,7 @@
 }
 @media screen and (max-width:768px) {
   .jumbotron .container {
-    padding: 120px 40px;
+    padding: 120px 20px;
   }
 }
 
@@ -141,25 +186,6 @@
   content: '';
   border-radius: 3px;
   background: #fa4141;
-}
-
-/* 小見出し */
-.sub_title {
-  position: relative;
-}
-.sub_title:before {
-  position: absolute;
-  top: calc(50% - 1px);
-  left: 0;
-  width: 55%;
-  height: 2px;
-  content: '';
-  background: #000;
-}
-.sub_title .sub_title_deco {
-  position: relative;
-  padding: 0 1em;
-  background: #fff;
 }
 
 /* 下層ページ見出し */

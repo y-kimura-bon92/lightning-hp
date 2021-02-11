@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lightning</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/setting.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body>
@@ -41,14 +39,15 @@
       <div class="split-right__inner">
 
         <!-- ヘッダー -->
-        <header class="mt-3 container">
+        <header class="mt_20 sp_mt_0 container">
           <div class="header_bar d-flex">
-            <div class="header_logo">
+            <div class="header_logo sp_pt_20">
               <h2>Lightning</h2>
             </div>
             <!-- ヘッダーメニュー -->
             <div class="header_nav">
-              <ul class="gnav">
+              <!-- pc -->
+              <ul class="gnav justify-content-end">
                 <li><a href="philosophy.html">MESSAGE</a></li>
                 <li>
                   <a href="#!">SERVICE</a>
@@ -60,7 +59,25 @@
                 </li>
                 <li><a href="recruit.html">RECRUIT</a></li>
                 <li><a href="company.html">COMPANY</a></li>
-              </ul>          
+              </ul>
+              <!-- sp -->
+              <nav class="navbar navbar-light justify-content-end gnav_sp">
+                <button class="navbar-toggler" type="button"
+                    data-toggle="collapse"
+                    data-target="#navmenu1"
+                    aria-controls="navmenu1"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu1">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Menu#1</a>
+                    <a class="nav-item nav-link" href="#">Menu#2</a>
+                    <a class="nav-item nav-link" href="#">Menu#3</a>
+                  </div>
+                </div>
+              </nav>
             </div>
 
           </div>
@@ -82,39 +99,52 @@
           </div>
 
           <!-- 事業紹介 -->
-          <div class="service mt_80">
+          <div class="service mt_80 sp_mt_40">
             <h1 class="main_title"><span class="text-danger">S</span>ervice<span class="main_title_b">事業紹介</span></h1>
             <!-- 通信事業 -->
-            <div class="img_content">
-              <div class="left_content_img box"><img src="img/top_internet_service.jpg" alt="" class="boxInner"></div>
-              <div class="right_content_text _design_img_animation">
-                <h4 class="mb_20 font-weight-bold">-01 通信事業</h4>
+            <div class="img_content row">
+              <!-- 左側コンテンツ 画像 -->
+              <div class="left_content_img box">
+                <img src="img/top_internet_service.jpg" alt="" class="boxInner col-11 col-lg-8">
+              </div>
+              <!-- 右側コンテンツ テキストエリア -->
+              <div class="right_content_text col-11 col-lg-6 _design_img_animation">
+                <h4 class="mb_20 sp_mb_10 font-weight-bold">-01 通信事業</h4>
                 <p class="small">自社プロバイダーサービス、UNIONプロバイダの取り扱いを2020年4月1日よりスタート致しました！
                   <br>安心の納得価格、満足の通信速度、充実の豊富なオプションサービス、万全のサポート体制を整えております。
                   <br>お気軽にお問い合わせ・ご相談くださいませ。</p>
               </div>
-              <div class="img_content_btn text-center mt_120 box">
+              <!-- 空スペーサー 100px -->
+              <div style="height: 100px;"></div>
+              <div class="img_content_btn text-center sp_mt_120 box">
                 <a href="service.html" class="d-inline-block boxInner">詳細はこちら</a>
               </div>
             </div>
+
             <!-- web デザイン -->
-            <div class="img_content mt_120">
-              <div class="right_content_img box"><img src="img/top_web_design.jpg" alt="" class="boxInner"></div>
-              <div class="left_content_text _design_img_animation">
-                <h4 class="mb_20 font-weight-bold">-02 webデザイン</h4>
+            <div class="img_content mt_120 sp_mt_80 row">
+              <!-- 右側コンテンツ 画像 -->
+              <div class="right_content_img box">
+                <img src="img/top_web_design.jpg" alt="" class="boxInner col-11 col-lg-8">
+              </div>
+              <!-- 左側コンテンツ テキストエリア -->
+              <div class="left_content_text col-11 col-lg-6 _design_img_animation">
+                <h4 class="mb_20 sp_mb_10 font-weight-bold">-02 webデザイン</h4>
                 <p class="small">株式会社Lightingはホームページ制作会社としても活動しております。
                   <br>ただホームページを作るのが目的ではなく、ホームページが産み出す成果を目的としております。
                   <br>お客様のニーズにマッチした、WEBサイトの力を飛躍的に高める戦略を構築致します。</p>
               </div>
-              <div class="img_content_btn text-center mt_120 box">
+              <!-- 空スペーサー 100px -->
+              <div style="height: 100px;"></div>
+              <div class="img_content_btn text-center sp_mt_120 box">
                 <a href="" class="d-inline-block boxInner">詳細はこちら</a>
               </div>
             </div>
           </div>
 
           <!-- その他事業 -->
-          <div class="other_business mt_120">
-            <h3 class="sub_title mb_40"><span class="sub_title_deco"><span class="text-danger">O</span>ther <span class="size_18">その他事業</span></span></h3>
+          <div class="other_business mt_120 sp_mt_80">
+            <h4 class="mb_20 sp_mb_10 font-weight-bold">-03 その他事業</h4>
             <div class="other_business_content _3column_effect">
               <div class="d-flex">
                 <!-- iphone修理 -->
@@ -128,8 +158,8 @@
                     </div>
                   </div>
                 </div>
-                <!-- その他 -->
-                <div class="col-lg-4">
+                <!-- その他02 -->
+                <div class="col-lg-4 sp_mt_10">
                   <div class="other_card_item">
                     <p class="mb_0"><img src="img/not_yet_open.jpg" alt="" class="w-100"></p>
                     <div class="bg-white pt-3 other_text_area">
@@ -138,8 +168,8 @@
                     </div>
                   </div>
                 </div>
-                <!-- その他 -->
-                <div class="col-lg-4">
+                <!-- その他03 -->
+                <div class="col-lg-4 sp_mt_10">
                   <div class="other_card_item">
                     <p class="mb_0"><img src="img/not_yet_open.jpg" alt="" class="w-100"></p>
                     <div class="bg-white pt-3 other_text_area">
@@ -164,7 +194,7 @@
                 <p class="full_img_btn_b mb_0">採用情報</p>
               </span>
             </a>
-            <a href="company.html" class="text-white col-lg-3 full_img_btn_content">
+            <a href="company.html" class="text-white col-lg-3 sp_mt_20 full_img_btn_content">
               <h3 class="full_img_btn">Company</h3>
               <hr>
               <p class="full_img_btn_b mb_0">会社概要</p>
@@ -207,9 +237,14 @@
     </div>
   </div>
 
+  
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   <script src="js/index.js"></script>
+  
 </body>
 </html>
 
