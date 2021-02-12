@@ -90,17 +90,19 @@
 }
 
 /* デザインコンテンツのボタン */
-.img_content_btn a {
-  padding: 15px 0;
+/* .img_content_btn a {
+  padding: 15px;
   width: 30%;
   border: 1px solid #0e192d;
   overflow: hidden;
   position: relative;
   z-index: 2;
   color: #0e192d;
+  background-color: #fff;
 }
 .img_content_btn a:hover {
   color: #fff !important;
+  background-color: #0e192d;
 }
 .img_content_btn a:before {
   position: absolute;
@@ -119,13 +121,48 @@
 .img_content_btn a:hover:before {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
+  background-color: #0e192d;
 }
 @media screen and (max-width:768px) {
   .img_content_btn a {
     padding: 15px;
     width: 80%;
   }
+} */
+.img_content_btn a {
+  position: relative;
+  display: inline-block;
+  padding: 1em 4em;
+  border: 1px solid #0e192d;
+  color: #0e192d;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+  background-color: #fff;
 }
+.img_content_btn a:hover {
+  color: #fff;
+}
+.img_content_btn a:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  background: #0e192d;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
+.img_content_btn a:hover:before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+
+
 
 /* その他事業の3カラムコンテンツ */
 .other_business_content {
@@ -181,7 +218,7 @@
   /* z-index: -1; */
 }
   
-.isPlay:before {
+/* .isPlay:before {
   animation-name: maskOut;
   animation-duration: .5s;
   animation-delay: .5s;
@@ -194,7 +231,7 @@
   z-index:-1;
   width: 100%;
   height: 100%;
-}
+} */
 
 @keyframes play {
   from {

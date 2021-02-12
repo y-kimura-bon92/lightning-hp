@@ -28,7 +28,7 @@ ol, ul {
 
 /* 段落全て */
 p {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width:768px) {

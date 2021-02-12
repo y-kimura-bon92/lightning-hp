@@ -45,7 +45,7 @@ $(function(){
       var isPlay = 'isPlay';
       var elemOffset = $(this).offset().top;
       var scrollPos = $(window).scrollTop();
-      // var wh = $(window).height();
+      var wh = $(window).height();
 			var wh = window.innerHeight;
       if(scrollPos > elemOffset - wh + (wh / 4)){
         $(this).addClass(isPlay);
