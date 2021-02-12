@@ -1,7 +1,10 @@
 /* 明朝体 */
 body {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  overflow-x: hidden !important;
 }
+
+/* テキストデコレーション */
 a {
   text-decoration: none;
 }
@@ -10,21 +13,6 @@ a {
   margin-left: 0;
   margin-right: 0;
 }
-ol, ul {
-  padding-left: 0 !important;
-  margin-bottom: 0;
-}
-p {
-  margin-bottom: 0 !important;
-}
-
-@media screen and (max-width:768px) {
-  p {
-    font-size: 14px !important;
-  }
-}
-
-
 .container{
   width: 100%;
   padding-right: var(--bs-gutter-x,3rem);
@@ -32,18 +20,50 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+
+ol, ul {
+  padding-left: 0 !important;
+  margin-bottom: 0;
+}
+
+/* 段落全て */
+p {
+  margin-bottom: 0 !important;
+}
+
 @media screen and (max-width:768px) {
+  .row>* {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  /* 段落全ての文字サイズ */
+  p {
+    font-size: 14px !important;
+  }
   .container{
     width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  /* safari限定 */
+  _::-webkit-full-page-media, _:future, :root .container {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
 
 
+
+
+
+
+
+/* カスタマイズ */
 .size_36 {
   font-size: 36px !important;
 }

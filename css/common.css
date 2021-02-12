@@ -10,6 +10,7 @@
 }
 .split-left{
   width: 35%;
+  overflow: hidden;
   /* z-index: -10; */
 }
 .split-left__inner{
@@ -17,13 +18,17 @@
   width: 35%;
   /* z-index: -10; */
 }
+.split-right,
+.split {
+  overflow: hidden;
+}
 
 @media screen and (max-width:768px) {
   .split-left{
     width: 100%;
   }
   .split-left__inner{
-    width: 100% !important;
+    width: 100vw !important;
     z-index: -1;
     opacity: 0.1;
   }
@@ -107,20 +112,28 @@
     display: flex;
     float: left;
   }
+
+  /* PC用のナビメニューを非表示 */
   .gnav{
-    display: none;
+    display: none !important;
   }
+  /* SP用のナビメニューを表示 */
   .gnav_sp {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
   }
+  /* sp用メニューのドロップダウンの横幅 */
   .navbar-collapse {
-    width: 50%;
+    width: 100vw;
   }
   .navbar {
     position: absolute;
-    right: 20px;
-}
+    right: 0;
+  }
+  .nav-link {
+    display: flex !important;
+    justify-content: center !important;
+  }
 }
 
 

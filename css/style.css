@@ -56,6 +56,8 @@
 /* 通信事業 */
 .img_content {
   position: relative;
+  max-width:100%;
+  overflow: hidden !important;
 }
 .left_content_img,
 .right_content_img {
@@ -89,7 +91,7 @@
 
 /* デザインコンテンツのボタン */
 .img_content_btn a {
-  padding: 15px;
+  padding: 15px 0;
   width: 30%;
   border: 1px solid #0e192d;
   overflow: hidden;
@@ -148,7 +150,7 @@
 	transition: 1.5s;
 	transform: translateY(80px);
 }
-/*アニメーション要素までスクロールした時のスタイル*/
+/* アニメーション要素までスクロールした時のスタイル*/
 ._design_img_animation_active,
 ._3column_effect_active {
 	opacity: 1;
@@ -202,14 +204,14 @@
     transform: translateX(0);
   }
 }
-/* @keyframes maskOut {
+@keyframes maskOut {
   from {
     transform: translateX(-100%);
   }
   to {
     transform: translateX(100%);
   }
-} */
+}
 @keyframes txtEffect {
   100% {
     opacity: .5;

@@ -5,6 +5,7 @@ $(function(){
       let target = $(this).offset().top;
       let scroll = $(window).scrollTop();
       let height = $(window).height();
+			// var height = window.innerHeight;
       if (scroll > target - height) {
         $(this).addClass('_main_logo_animation_active')
       }
@@ -23,7 +24,8 @@ $(function(){
       //スクロール量を取得
       let scroll = $(window).scrollTop();
       //ウィンドウの高さを取得
-      let height = $(window).height();
+      // let height = $(window).height();
+			var height = window.innerHeight;
       //ターゲットまでスクロールするとフェードインする
       if (scroll > target - height){
         //クラスを付与
@@ -43,7 +45,8 @@ $(function(){
       var isPlay = 'isPlay';
       var elemOffset = $(this).offset().top;
       var scrollPos = $(window).scrollTop();
-      var wh = $(window).height();
+      // var wh = $(window).height();
+			var wh = window.innerHeight;
       if(scrollPos > elemOffset - wh + (wh / 4)){
         $(this).addClass(isPlay);
       }
@@ -58,7 +61,8 @@ $(function(){
     $('._3column_effect').each(function(){
       let target = $(this).offset().top;
       let scroll = $(window).scrollTop();
-      let height = $(window).height();
+      // let height = $(window).height();
+			var height = window.innerHeight;
       if (scroll > target - height) {
         $(this).addClass('_3column_effect_active');
       }

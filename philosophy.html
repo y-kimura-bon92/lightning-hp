@@ -36,17 +36,52 @@
         <!-- ヘッダー -->
         <header class="mt-3 container">
           <div class="header_bar d-flex">
-            <div class="header_logo">
-              <h2><a href="index.html">Lightning</a></h2>
+            <div class="header_logo sp_pt_20">
+              <h2>Lightning</h2>
             </div>
-            <div class="header_nav d-flex justify-content-end">
-              <ul class="p-2">
-                <li class="d-inline-block p-2"><a href="philosophy.html">MESSAGE</a></li>
-                <li class="d-inline-block p-2"><a href="service.html">SERVICE</a></li>
-                <li class="d-inline-block p-2"><a href="recruit.html">RECRUIT</a></li>
-                <li class="d-inline-block p-2"><a href="company.html">COMPANY</a></li>
+            <!-- ヘッダーメニュー -->
+            <div class="header_nav">
+              <!-- pc -->
+              <ul class="gnav justify-content-end">
+                <li><a href="philosophy.html">MESSAGE</a></li>
+                <li>
+                  <a href="#!">SERVICE</a>
+                  <ul class="dropdown_menu_pc">
+                    <li><a href="service.html">通信事業</a></li>
+                    <li><a href="">Webデザイン</a></li>
+                    <li><a href="">その他の事業</a></li>
+                  </ul>
+                </li>
+                <li><a href="recruit.html">RECRUIT</a></li>
+                <li><a href="company.html">COMPANY</a></li>
               </ul>
+              <!-- sp -->
+              <nav class="navbar navbar-light justify-content-end gnav_sp">
+                <button class="navbar-toggler" type="button"
+                    data-toggle="collapse"
+                    data-target="#navmenu1"
+                    aria-controls="navmenu1"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu1">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">TOP</a>
+                    <a class="nav-item nav-link" href="philosophy.html">MESSAGE</a>
+                    <a class="nav-item nav-link" href="#">SERVICE</a>
+                    <ul class="dropdown_menu_pc">
+                      <li><a href="service.html">通信事業</a></li>
+                      <li><a href="">Webデザイン</a></li>
+                      <li><a href="">その他の事業</a></li>
+                    </ul>
+                    <a class="nav-item nav-link" href="recruit.html">RECRUIT</a>
+                    <a class="nav-item nav-link" href="company.html">COMPANY</a>
+                  </div>
+                </div>
+              </nav>
             </div>
+
           </div>
         </header>
 
@@ -144,6 +179,11 @@
   </div>
 
 
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   <script src="js/index.js"></script>
 
 </body>
