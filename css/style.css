@@ -63,30 +63,26 @@
 .right_content_img {
   padding: 0;
 }
-.right_content_text {
-  position: absolute;
-  right: 0;
-  top: 25%;
-  padding: 30px;
-  background-color: #fff;
-  box-shadow: 4px 4px 4px 0 rgba(0,0,0,.2);
-  /* width: 50%; */
-  height: auto;
-}
-
 /* web デザイン */
 .right_content_img {
   text-align: right;
 }
+
+.right_content_text,
 .left_content_text {
   position: absolute;
-  left: 0;
   top: 25%;
   padding: 30px;
   background-color: #fff;
   box-shadow: 4px 4px 4px 0 rgba(0,0,0,.2);
   /* width: 50%; */
   height: auto;
+}
+.right_content_text {
+  right: 0;
+}
+.left_content_text {
+  left: 0;
 }
 
 /* デザインコンテンツのボタン */

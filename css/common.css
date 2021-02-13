@@ -215,9 +215,12 @@
 }
 
 
+
+
+
 /* -----------------------------
       footer
---------------------------------- */
+-------------------------------- */
 footer {
   border-top: 1px solid #fff;
   z-index: 1;
@@ -228,15 +231,64 @@ footer {
   color: #fff;
 }
 
+/* フッターコンテンツの仕切り線 */
 .footer_left_content,
 .footer_center_content {
   border-right: 1px solid #fff;
 }
+@media screen and (max-width:768px) {
+  .footer_left_content,
+  .footer_center_content {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+  }
+}
 
+/* フッター左コンテンツのテキスト行間 */
 .footer_left_content p {
   margin-bottom: 10px !important;
 }
 
+/* フッター内ボタン */
+.footer_content_btn a {
+  margin-top: 15%;
+  padding: 1em 4em;
+  border: 1px solid #fff !important;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+  background-color: #0e192d;
+}
+.footer_content_btn a:hover {
+  color: #0e192d;
+  background-color: #fff;
+}
+
+/* フッター右側コンテンツ */
+.footer_right_content li {/* リストのフォント */
+  font-size: 90%;
+}
+.footer_right_content li a {/* リストのフォント */
+  color: #fff;
+}
+/* リスト */
+.footer_right_content .outside_list {
+  margin-left: 1rem;
+}
+.footer_right_content .outside_list li {
+  margin-bottom: .5rem;
+}
+/* 少リスト */
+.inside_list {
+  margin-left: 0;
+}
+.footer_right_content .inside_list li {
+  list-style: none;
+  margin-bottom: 0;
+}
+.footer_right_content .inside_list li::before {
+  content: "- ";
+}
 
 /* footermenu */
 .footer_menu ul li {
