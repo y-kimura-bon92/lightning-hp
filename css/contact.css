@@ -1,0 +1,20 @@
+
+.form-control,
+.bounceInRight {
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #333;
+  color: #333;
+  line-height: 25px;
+  overflow: hidden;
+}
+.form-control:focus {
+  background-color: #333;
+  color: #fff;
+}
+
+.bounceInRight:hover {
+  color: #fff;
+  background-color: #333;
+}
+
