@@ -1,20 +1,86 @@
+/* -----------------------------
+      contact 左画面
+--------------------------------- */
+.split-left__inner {
+  background-image: url(../img/contact_main.jpg);
+  background-size: 100%;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 35%;
+}
+.catch_copy {
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+.catch_copy h1 {
+  font-weight: 700 !important;
+  text-align: center;
+}
+.catch_copy span {
+  font-size: 50%;
+}
+
+
+/* -----------------------------
+      contact 注意書き
+--------------------------------- */
+.notes_contact {
+  position: relative;
+  margin: 2em 0;
+  padding: 1rem;
+  border: solid 3px #7db4e6;
+  background-color: #f5f5f5;
+}
+.notes_contact_title {
+  position: absolute;
+  display: inline-block;
+  top: -40px;
+  left: -3px;
+  padding: 0 9px;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  background: #7db4e6;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.notes_contact ul {
+  margin: 0; 
+  padding-left: 2rem !important;
+}
+
+
+/* -----------------------------
+      contact form
+--------------------------------- */
+label {/* inputの見出し */
+  margin-top: 20px;
+}
 
 .form-control,
 .bounceInRight {
   position: relative;
-  background-color: #fff;
-  border: 2px solid #333;
-  color: #333;
+  background-color: #e3eef8;
+  border: 2px solid #0e192d;
+  color: #0e192d;
   line-height: 25px;
   overflow: hidden;
 }
+/* inputをクリックしたときの色 */
 .form-control:focus {
-  background-color: #333;
+  background-color: #0e192d;
   color: #fff;
 }
 
 .bounceInRight:hover {
   color: #fff;
-  background-color: #333;
+  background-color: #0e192d;
 }
 

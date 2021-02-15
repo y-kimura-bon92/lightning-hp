@@ -11,54 +11,175 @@
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
 </head>
+
 <body>
-  <div class="text-center w-50 m-auto pt-5">
-    <div class="container">
-      <h2 class="">お問い合わせ</h2>
-      <p class="subtitle">Contact us / Free trial</p>
-    </div>
-  </div>
+  <div class="split">
+    <!-- --------------------------------------------------------------------------
+      スプリットレイアウト fixed
+    ------------------------------------------------------------------------------ -->
+    <div class="split-item split-left">
+      <div class="split-left__inner">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 m-auto">
-        <div class="contact-form">
-          <h4 class="">お問い合わせフォーム</h4>
-
-          <!-- メールフォーム -->
-          <form role="form" method="post" action="php/mail_confirm.php">
-            <div class="form-group">
-              <label for="">お名前</label>
-              <input type="text" class="form-control input-lg" name="NAME" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <label for="">お名前（カナ）</label>
-              <input type="text" class="form-control input-lg" name="NAME_KANA" placeholder="Kana" required>
-            </div>
-            <div class="form-group">
-              <label for="">メールアドレス</label>
-              <input type="email" class="form-control input-lg" name="EMAIL" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-              <label for="">電話番号</label>
-              <input type="text" class="form-control input-lg" name="TEL" placeholder="Tel Number">
-            </div>
-            <div class="form-group">
-              <label for="">FAX番号</label>
-              <input type="text" class="form-control input-lg" name="FAX" placeholder="Fax number">
-            </div>
-            <div class="form-group">
-              <label for="">お問い合わせ内容</label>
-              <textarea class="form-control input-lg" name="MESSAGE" placeholder="Message"></textarea>
-            </div>
-            <button style="border-width: 1px;" type="submit" class="btn btn-blank btn-default bounceInRight w-100">送信する</button>
-          </form>
+        <!-- 左画面メインビジュアル -->
+        <div class="jumbotron catch_copy">
+          <h1 class="display-3">CONTACT<br><span class="">お問い合わせ</span></h1>
         </div>
       </div>
-
     </div>
-    <!-- /.row -->
+
+
+    <!-- --------------------------------------------------------------------------
+      スプリットレイアウト content 
+    ------------------------------------------------------------------------------ -->
+    <div class="split-item split-right">
+      <div class="split-right__inner">
+
+        <!-- ヘッダー -->
+        <header class="mt_20 sp_mt_0 container">
+          <div class="header_bar d-flex">
+            <div class="header_logo sp_pt_20">
+              <h2><a href="index.html">Lightning</a></h2>
+            </div>
+            <!-- ヘッダーメニュー -->
+            <div class="header_nav">
+              <!-- pc -->
+              <ul class="gnav justify-content-end">
+                <li><a href="philosophy.html">MESSAGE</a></li>
+                <li>
+                  <a href="#!">SERVICE</a>
+                  <ul class="dropdown_menu_pc">
+                    <li><a href="service.html">通信事業</a></li>
+                    <li><a href="">Webデザイン</a></li>
+                    <li><a href="">その他の事業</a></li>
+                  </ul>
+                </li>
+                <li><a href="recruit.html">RECRUIT</a></li>
+                <li><a href="company.html">COMPANY</a></li>
+              </ul>
+              <!-- sp -->
+              <nav class="navbar navbar-light justify-content-end gnav_sp">
+                <button class="navbar-toggler" type="button"
+                    data-toggle="collapse"
+                    data-target="#navmenu1"
+                    aria-controls="navmenu1"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu1">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">TOP</a>
+                    <a class="nav-item nav-link" href="philosophy.html">MESSAGE</a>
+                    <a class="nav-item nav-link" href="#">SERVICE</a>
+                    <ul class="dropdown_menu_pc">
+                      <li><a href="service.html">通信事業</a></li>
+                      <li><a href="">Webデザイン</a></li>
+                      <li><a href="">その他の事業</a></li>
+                    </ul>
+                    <a class="nav-item nav-link" href="recruit.html">RECRUIT</a>
+                    <a class="nav-item nav-link" href="company.html">COMPANY</a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+          </div>
+        </header>
+
+
+
+        <!-- お問い合わせコンテンツ -->
+        <div class="container mt_120 mb_120">
+          <div class="mb_80">
+            <h2 class="first_letter_design">お問い合わせ ―</h2>
+          </div>
+
+          <!-- 注意書き -->
+          <div class="notes_contact mt_40">
+            <span class="notes_contact_title">CHECK！！</span>
+            <ul>
+              <li>確認後、少々お時間をいただく場合がございます。お急ぎの方はお電話でご連絡ください。</li>
+              <li>送信から一週間を経過しても連絡が無い場合は、お手数ですがお電話で再度お問い合わせください。</li>
+              <li>半角カタカナはご利用いただけません。全角カタカナでご入力ください。</li>
+              <li>※印は必須項目ですので、必ずご入力ください。</li>
+              <li>必要事項を入力後、フォーム下部の【送信】ボタンを押してください。</li>
+            </ul>
+          </div>
+
+          <!-- メールフォーム -->
+          <div class="row mt_40">
+            <div class="contact-form">
+              <form role="form" method="post" action="php/mail_confirm.php">
+                <div class="form-group">
+                  <label for="">お名前</label>
+                  <input type="text" class="form-control input-lg" name="NAME" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="">お名前（カナ）</label>
+                  <input type="text" class="form-control input-lg" name="NAME_KANA" placeholder="Kana" required>
+                </div>
+                <div class="form-group">
+                  <label for="">メールアドレス</label>
+                  <input type="email" class="form-control input-lg" name="EMAIL" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <label for="">電話番号</label>
+                  <input type="text" class="form-control input-lg" name="TEL" placeholder="Tel Number">
+                </div>
+                <div class="form-group">
+                  <label for="">FAX番号</label>
+                  <input type="text" class="form-control input-lg" name="FAX" placeholder="Fax number">
+                </div>
+                <div class="form-group">
+                  <label for="">お問い合わせ内容</label>
+                  <textarea class="form-control input-lg" name="MESSAGE" placeholder="Message"></textarea>
+                </div>
+
+                <!-- 確認ボタン -->
+                <button type="submit" class="btn btn-blank btn-default bounceInRight w-100 mt_80">確認画面へ</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- フッター -->
+        <footer>
+          <div class="footer_content container pt_40">
+            <h2 class="pb_20">Lightning</h2>
+            <div class="row">
+              <div class="col-lg-4">
+                <p>〒530-0002 大阪市中央区1-2-3 <br>ビル</p>
+              </div>
+              <div class="col-lg-4">
+                <p>〒530-0002 大阪市中央区1-2-3 <br>ビル</p>
+              </div>
+              <div class="col-lg-4">
+                <p>〒530-0002 大阪市中央区1-2-3 <br>ビル</p>
+              </div>
+            </div>
+          </div>
+          <!-- フッターメニュー -->
+          <div class="footer_menu container">
+            <ul class="text-center">
+              <li class="d-inline-block"><a href="philosophy.html">MESSAGE</a></li>
+              <li class="d-inline-block"><a href="service.html">SERVICE</a></li>
+              <li class="d-inline-block"><a href="recruit.html">RECRUIT</a></li>
+              <li class="d-inline-block"><a href="company.html">COMPANY</a></li>
+            </ul>
+          </div>
+          <!-- コピーライト -->
+          <div class="footer_copy_light container">
+            <p class="text-center small">Copyright © 2021 Lightning Inc. All Rights Reserved.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+
+
   </div>
-  <!-- /.container -->
+
 </body>
 </html>
