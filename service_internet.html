@@ -2,31 +2,42 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lightning</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/service.css">
   <link rel="stylesheet" href="css/setting.css">
   <link rel="stylesheet" href="css/common.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="css/service_internet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
 </head>
 
 <body>
+
   <div class="split">
-    <!-- スプリットレイアウト fixsed -->
+    <!-- --------------------------------------------------------------------------
+      スプリットレイアウト fixed
+    ------------------------------------------------------------------------------ -->
     <div class="split-item split-left">
       <div class="split-left__inner">
+
+        <!-- 左画面メインビジュアル -->
         <div class="jumbotron catch_copy">
-          <h1 class="display-3">SERVICE<br><span class="">事業紹介</span></h1>
+          <h1 class="display-3">SERVICE<br><span class="">通信事業</span></h1>
         </div>
       </div>
     </div>
-    <!-- スプリットレイアウト content -->
+
+
+    <!-- --------------------------------------------------------------------------
+      スプリットレイアウト content 
+    ------------------------------------------------------------------------------ -->
     <div class="split-item split-right">
       <div class="split-right__inner">
 
-        <!-- ヘッダー -->
+        <!-- ------------------------ 
+          ヘッダー 
+        --------------------------- -->
         <header class="mt_20 sp_mt_0 container">
           <div class="header_bar d-flex">
             <div class="header_logo sp_pt_20">
@@ -34,21 +45,24 @@
             </div>
             <!-- ヘッダーメニュー -->
             <div class="header_nav">
-              <!-- pc -->
+
+              <!-- pc menu -->
               <ul class="gnav justify-content-end">
                 <li><a href="philosophy.html">MESSAGE</a></li>
                 <li>
-                  <a href="#!">SERVICE</a>
+                  <a>SERVICE</a>
                   <ul class="dropdown_menu_pc">
-                    <li><a href="service.html">通信事業</a></li>
-                    <li><a href="">Webデザイン</a></li>
-                    <li><a href="">その他の事業</a></li>
+                    <li><a href="service_internet.html">通信事業</a></li>
+                    <li><a href="service_webdesign.html">Webデザイン</a></li>
+                    <li><a href="service_other.html">その他の事業</a></li>
                   </ul>
                 </li>
                 <li><a href="recruit.html">RECRUIT</a></li>
                 <li><a href="company.html">COMPANY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
               </ul>
-              <!-- sp -->
+
+              <!-- sp menu -->
               <nav class="navbar navbar-light justify-content-end gnav_sp">
                 <button class="navbar-toggler" type="button"
                     data-toggle="collapse"
@@ -62,23 +76,23 @@
                   <div class="navbar-nav">
                     <a class="nav-item nav-link" href="index.html">TOP</a>
                     <a class="nav-item nav-link" href="philosophy.html">MESSAGE</a>
-                    <a class="nav-item nav-link" href="">SERVICE</a>
-                    <ul class="dropdown_menu_pc">
-                      <li><a href="service_internet.html">通信事業</a></li>
-                      <li><a href="service_webdesign.html">Webデザイン</a></li>
-                      <li><a href="service_other.html">その他の事業</a></li>
-                    </ul>
+                    <a class="nav-item nav-link" href="service_internet.html">通信事業</a>
+                    <a class="nav-item nav-link" href="service_webdesign.html">Webデザイン</a>
+                    <a class="nav-item nav-link" href="service_other.html">その他の事業</a>
                     <a class="nav-item nav-link" href="recruit.html">RECRUIT</a>
                     <a class="nav-item nav-link" href="company.html">COMPANY</a>
+                    <a class="nav-item nav-link" href="contact.html">CONTACT</a>
                   </div>
                 </div>
               </nav>
             </div>
-
           </div>
         </header>
 
-        <div class="container mt_120">
+
+
+        <!-- 通信事業コンテンツ -->
+        <div class="container mt_120 mb_120">
 
           <p>主にコールセンターにてお客様にご案内致します。
             <br>安心の納得価格、満足の通信速度、充実の豊富なオプションサービス、万全のサポート体制を整えております。お気軽にお問い合わせ・ご相談くださいませ。
@@ -101,12 +115,12 @@
                     <br>NTT東日本・NTT西日本が提供するフレッツADSL、フレッツ光に対応しており、全国のお客様がご利用可能です。</p>
                 </div>
               </div>
-              <div class="img_content_btn text-center mt_80 box">
-                <a href="" class="d-inline-block boxInner">詳細はこちら</a>
+              <div class="img_content_btn text-center mt_40">
+                <a href="" class="d-inline-block">詳細はこちら</a>
               </div>
             </div>
 
-            <div class="mt_120">
+            <div class="mt_80" id="uni_wifi">
               <h2 class="first_letter_design">WI-FIルーター販売 ―</h2>
               <div class="row mt_20">
                 <div class="col-lg-6">
@@ -119,12 +133,12 @@
                     <br>中でも2.4GHzのカバレージは印象的とも言える広さ｡その広さは競合のルーターを凌駕するでしょう</p>
                 </div>
               </div>
-              <div class="img_content_btn text-center mt_80 box">
-                <a href="" class="d-inline-block boxInner">詳細はこちら</a>
+              <div class="img_content_btn text-center mt_40">
+                <a href="" class="d-inline-block">詳細はこちら</a>
               </div>
             </div>
 
-            <div class="mt_120">
+            <div class="mt_80" id="analog">
               <h2 class="first_letter_design">アナログ戻し ―</h2>
               <div class="row mt_20">
                 <div class="col-lg-6">
@@ -136,49 +150,61 @@
                     <br>NTT光の契約は「インターネット回線+光電話回線」というセット料金に加え、別途プロバイダー料金もかかってしまうのでとても高額になってしまうのです。</p>
                 </div>
               </div>
-              <div class="img_content_btn text-center mt_80 box">
-                <a href="" class="d-inline-block boxInner">詳細はこちら</a>
-              </div>
-            </div>
-
-          </div>
-
-          <!----------------------
-             Web デザイン
-          ---------------------->
-          <div class="mt_80 web_content">
-            <h2 class="first_letter_design">Webデザイン ―</h2>
-            <div class="row mt_20">
-              <div class="col-lg-6">
-                <p><img src="img/service_02.jpg" alt="" class="w-100"></p>
-              </div>
-              <div class="col-lg-6">
-                <p style="line-height: 2rem;">WEBサイト／WEBコンテンツ制作
-                  <br>WEBにおけるサイト、コンテンツ等の制作です。
-                  <br>WEBを使用したサービスを成功させるためには、綿密な計画と効率的な運用のためのPDCAサイクルを行う必要があります。
-                  <br>そこから、ホームページが産み出す成果を目的として活動しております。</p>
+              <div class="img_content_btn text-center mt_40">
+                <a href="" class="d-inline-block">詳細はこちら</a>
               </div>
             </div>
           </div>
-
         </div>
 
-        <!-- フッター -->
+
+
+        <!-- ------------------------ 
+          フッター 
+        --------------------------- -->
         <footer>
-          <div class="footer_content container pt_40">
-            <h2 class="pb_20">Lightning</h2>
+          <div class="footer_content container pt_40 pb_40">
+            <!-- フッターロゴ -->
+            <h2 class="pb_40">Lightning</h2>
             <div class="row">
-              <div class="col-lg-4">
+              <!-- フッター企業概要 -->
+              <div class="col-lg-4 footer_left_content sp_pb_40">
+                <p>株式会社UNION</p>
                 <p>〒530-0002 大阪市中央区1-2-3 <br>ビル</p>
+                <p>TEL：06-1234-5678</p>
+                <p class="sp_mb_0">事業内容：通信事業、webデザイン事業、海外事業、コンテンツ事業、不動産事業、アパレル事業</p>
               </div>
-              <div class="col-lg-4">
-                <p>〒530-0002 大阪市中央区1-2-3 <br>ビル</p>
+
+              <!-- フッターお問い合わせ -->
+              <div class="col-lg-4 footer_center_content sp_mt_40 sp_pb_40">
+                <p class="mb_20">お問い合わせ</p>
+                <p>ご不明点など、お気軽にお問い合わせ下さい。</p>
+                <p class="footer_content_btn text-center"><a href="contact.html" class="d-inline-block">メールフォーム</a></p>
               </div>
-              <div class="col-lg-4">
-                <p>〒530-0002 大阪市中央区1-2-3 <br>ビル</p>
+
+              <!-- フッターサイトマップ -->
+              <div class="col-lg-4 footer_right_content sp_mt_40">
+                <p>サイトマップ</p>
+                <ul class="outside_list">
+                  <li><a href="index.html">top</a></li>
+                  <li>事業内容
+                    <ul class="inside_list">
+                      <li><a href="service_internet.html">プロバイダ</a> - <a href="">申し込み</a></li>
+                      <li><a href="service_internet.html#uni_wifi">UNION WI-FI</a> - <a href="">申し込み</a></li>
+                      <li><a href="service_internet.html#analog">アナログ戻し</a> - <a href="">申し込み</a></li>
+                      <li><a href="service_webdesign.html">WEBデザイン</a></li>
+                      <li><a href="service_other.html#iphone_repear">iphone修理</a></li>
+                      <li><a href="service_other.html#curedit">クレカ保証</a> - <a href="">申し込み</a></li>
+                      <li><a href="service_other.html#mutual">共済</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="company.html">企業内容・アクセス</a></li>
+                  <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
               </div>
             </div>
           </div>
+
           <!-- フッターメニュー -->
           <div class="footer_menu container">
             <ul class="text-center">
@@ -205,5 +231,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   <script src="js/index.js"></script>
+
 </body>
 </html>

@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lightning</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -38,7 +39,9 @@
     <div class="split-item split-right">
       <div class="split-right__inner">
 
-        <!-- ヘッダー -->
+        <!-- ------------------------ 
+          ヘッダー 
+        --------------------------- -->
         <header class="mt_20 sp_mt_0 container">
           <div class="header_bar d-flex">
             <div class="header_logo sp_pt_20">
@@ -46,6 +49,7 @@
             </div>
             <!-- ヘッダーメニュー -->
             <div class="header_nav">
+
               <!-- pc -->
               <ul class="gnav justify-content-end">
                 <li><a href="philosophy.html">MESSAGE</a></li>
@@ -59,9 +63,10 @@
                 </li>
                 <li><a href="recruit.html">RECRUIT</a></li>
                 <li><a href="company.html">COMPANY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
               </ul>
 
-              <!-- sp -->
+              <!-- sp menu -->
               <nav class="navbar navbar-light justify-content-end gnav_sp">
                 <button class="navbar-toggler" type="button"
                     data-toggle="collapse"
@@ -85,7 +90,6 @@
                 </div>
               </nav>
             </div>
-
           </div>
 
 
@@ -127,7 +131,7 @@
               <div style="height: 100px;"></div>
               <!-- 通信事業ボタン -->
               <div class="img_content_btn text-center sp_mt_120 box">
-                <a href="service.html" class="d-inline-block boxInner">詳細はこちら</a>
+                <a href="service_internet.html" class="d-inline-block boxInner">詳細はこちら</a>
               </div>
             </div>
 
@@ -148,51 +152,70 @@
               <div style="height: 100px;"></div>
               <!-- webデザインボタン -->
               <div class="img_content_btn text-center sp_mt_120 box">
-                <a href="" class="d-inline-block boxInner">詳細はこちら</a>
+                <a href="service_webdesign.html" class="d-inline-block boxInner">詳細はこちら</a>
               </div>
             </div>
           </div>
+
+
 
           <!-- その他事業 -->
           <div class="other_business mt_120 sp_mt_80">
             <h4 class="mb_20 sp_mb_10 font-weight-bold">-03 その他事業</h4>
             <div class="other_business_content _3column_effect">
               <div class="d-flex">
+
                 <!-- iphone修理 -->
                 <div class="col-lg-4">
-                  <div class="other_card_item">
-                    <p class="mb_0"><img src="img/iphone_repair.jpg" alt="アイフォン修理" class="w-100"></p>
-                    <div class="bg-white pt-3 other_text_area">
-                      <h6 class="text-danger">iphone修理</h6>
-                      <p class="small">iPhoneの故障でお困りなら、Lightningにお任せ下さい！
-                        <br>Lightningでは、iPhoneの画面割れ、バッテリー交換、起動しない、水没等、故障全般の修理を承っております。</p>
+                  <a href="service_other.html#analog" class="text-dark">
+                    <div class="other_card_item">
+                      <!-- iphone修理画像 -->
+                      <p class="mb_0"><img src="img/iphone_repair.jpg" alt="アイフォン修理" class="w-100"></p>
+                      <!-- iphone修理テキストエリア -->
+                      <div class="bg-white pt-3 other_text_area">
+                        <h6 class="text-danger">iphone修理</h6>
+                        <p class="small">iPhoneの故障でお困りなら、Lightningにお任せ下さい！
+                          <br>Lightningでは、iPhoneの画面割れ、バッテリー交換、起動しない、水没等、故障全般の修理を承っております。</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
-                <!-- その他02 -->
+
+                <!-- その他 クレカ保証 -->
                 <div class="col-lg-4 sp_mt_10">
-                  <div class="other_card_item">
-                    <p class="mb_0"><img src="img/not_yet_open.jpg" alt="" class="w-100"></p>
-                    <div class="bg-white pt-3 other_text_area">
-                      <h6 class="text-danger">準備中</h6>
-                      <p></p>
+                  <a href="service_other.html#curedit" class="text-dark">
+                    <div class="other_card_item">
+                      <!-- クレカ保証画像 -->
+                      <p class="mb_0"><img src="img/not_yet_open.jpg" alt="" class="w-100"></p>
+                      <!-- クレカ保証テキストエリア -->
+                      <div class="bg-white pt-3 other_text_area">
+                        <h6 class="text-danger">クレカ保証</h6>
+                        <p class="small">準備中</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
-                <!-- その他03 -->
+
+                <!-- その他 共済 -->
                 <div class="col-lg-4 sp_mt_10">
-                  <div class="other_card_item">
-                    <p class="mb_0"><img src="img/not_yet_open.jpg" alt="" class="w-100"></p>
-                    <div class="bg-white pt-3 other_text_area">
-                      <h6 class="text-danger">準備中</h6>
-                      <p></p>
+                  <a href="service_other.html#mutual" class="text-dark">
+                    <div class="other_card_item">
+                      <!-- 共済画像 -->
+                      <p class="mb_0"><img src="img/not_yet_open.jpg" alt="" class="w-100"></p>
+                      <!-- 共済テキストエリア -->
+                      <div class="bg-white pt-3 other_text_area">
+                        <h6 class="text-danger">共済</h6>
+                        <p class="small">UNIONの共済事業は正規も非正規も同じ仕事で同じ賃金・労働条件が当たり前の均等待遇、大企業の内部留保の活用で労働者の賃上げと安定した雇用の実現など、人間らしくいきいきと働くことができる職場と地域・社会をつくることをめざしています。</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
 
         <!-- フル幅画像コンテンツ -->
         <div class="full_img_content mt_120 mb_120">
@@ -235,7 +258,7 @@
               <div class="col-lg-4 footer_center_content sp_mt_40 sp_pb_40">
                 <p class="mb_20">お問い合わせ</p>
                 <p>ご不明点など、お気軽にお問い合わせ下さい。</p>
-                <p class="footer_content_btn text-center"><a href="" class="d-inline-block">メールフォーム</a></p>
+                <p class="footer_content_btn text-center"><a href="contact.html" class="d-inline-block">メールフォーム</a></p>
               </div>
 
               <!-- フッターサイトマップ -->
@@ -245,11 +268,13 @@
                   <li><a href="index.html">top</a></li>
                   <li>事業内容
                     <ul class="inside_list">
-                      <li><a href="index.html">ISP</a> - <a href="">申し込み</a></li>
-                      <li><a href="index.html">アナログ戻し</a> - <a href="">申し込み</a></li>
-                      <li><a href="index.html">クレカ保証</a> - <a href="">申し込み</a></li>
-                      <li><a href="index.html">WEBデザイン</a></li>
-                      <li><a href="index.html">共済</a></li>
+                      <li><a href="service_internet.html">プロバイダ</a> - <a href="">申し込み</a></li>
+                      <li><a href="service_internet.html#uni_wifi">UNION WI-FI</a> - <a href="">申し込み</a></li>
+                      <li><a href="service_internet.html#analog">アナログ戻し</a> - <a href="">申し込み</a></li>
+                      <li><a href="service_webdesign.html">WEBデザイン</a></li>
+                      <li><a href="service_other.html#iphone_repear">iphone修理</a></li>
+                      <li><a href="service_other.html#curedit">クレカ保証</a> - <a href="">申し込み</a></li>
+                      <li><a href="service_other.html#mutual">共済</a></li>
                     </ul>
                   </li>
                   <li><a href="company.html">企業内容・アクセス</a></li>
@@ -285,7 +310,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   <script src="js/index.js"></script>
-  
+
 </body>
 </html>
 

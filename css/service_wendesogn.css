@@ -1,0 +1,64 @@
+
+
+/* -----------------------------
+      service webデザイン事業 左画面
+--------------------------------- */
+.split-left__inner {
+  background-image: url(../img/service_webdesign_main.jpg);
+  background-size: 100%;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 35%;
+}
+.catch_copy {
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+.catch_copy h1 {
+  font-weight: 700 !important;
+  text-align: center;
+}
+.catch_copy span {
+  font-size: 50%;
+}
+
+/* -----------------------------
+      コンテンツ
+--------------------------------- */
+/* デザインコンテンツのボタン */
+.img_content_btn a {
+  position: relative;
+  display: inline-block;
+  padding: 1em 4em;
+  border: 1px solid #0e192d;
+  color: #0e192d;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+}
+.img_content_btn a:hover {
+  color: #fff;
+}
+.img_content_btn a::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  background: #0e192d;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
+.img_content_btn a:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}

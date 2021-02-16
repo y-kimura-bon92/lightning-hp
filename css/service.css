@@ -6,8 +6,8 @@
   background-size: 100%;
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 100%;
-  width: 40%;
+  height: 100vh;
+  width: 35%;
 }
 .catch_copy {
   display: flex;
@@ -27,7 +27,10 @@
 }
 
 
-/* デザインコンテンツのボタン */
+/* -----------------------------
+      コンテンツ
+--------------------------------- */
+
 .img_content_btn a {
   position: relative;
   display: inline-block;
@@ -59,10 +62,3 @@
   transform-origin: left top;
   transform: scale(1, 1);
 }
-/* 
-@media screen and (max-width:768px) {
-  .img_content_btn a {
-    padding: 15px;
-    width: 80%;
-  }
-} */

@@ -8,8 +8,8 @@
   background-size: 100%;
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 100%;
-  width: 40%;
+  height: 100vh;
+  width: 35%;
 }
 .catch_copy {
   display: flex;
