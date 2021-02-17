@@ -27,7 +27,7 @@ ol, ul {
 }
 
 /* 段落全て */
-p {
+p, hr {
   margin-bottom: 0;
 }
 
@@ -56,6 +56,16 @@ p {
   }
 }
 
+
+/* <br class="sp_br"> */
+.sp_br {
+  display: none;
+}  
+@media screen and (max-width:768px) {
+  .sp_br {
+    display: block;
+  }  
+}
 
 
 
@@ -107,6 +117,9 @@ p {
 .mt_20 {
   margin-top: 20px !important;
 }
+.mt_30 {
+  margin-top: 30px !important;
+}
 .mt_10 {
   margin-top: 10px !important;
 }
@@ -128,6 +141,9 @@ p {
 }
 .mb_40 {
   margin-bottom: 40px !important;
+}
+.mb_30 {
+  margin-bottom: 30px !important;
 }
 .mb_20 {
   margin-bottom: 20px !important;
@@ -157,6 +173,9 @@ p {
 .pt_40 {
   padding-top: 40px !important;
 }
+.pt_30 {
+  padding-top: 30px !important;
+}
 .pt_20 {
   padding-top: 20px !important;
 }
@@ -181,6 +200,9 @@ p {
 }
 .pb_40 {
   padding-bottom: 40px !important;
+}
+.pb_30 {
+  padding-bottom: 30px !important;
 }
 .pb_20 {
   padding-bottom: 20px !important;
@@ -231,6 +253,9 @@ p {
   .sp_mt_40 {
     margin-top: 40px !important;
   }
+  .sp_mt_30 {
+    margin-top: 30px !important;
+  }
   .sp_mt_20 {
     margin-top: 20px !important;
   }
@@ -255,6 +280,9 @@ p {
   }
   .sp_mb_40 {
     margin-bottom: 40px !important;
+  }
+  .sp_mb_30 {
+    margin-bottom: 30px !important;
   }
   .sp_mb_20 {
     margin-bottom: 20px !important;
@@ -284,6 +312,9 @@ p {
   .sp_pt_40 {
     padding-top: 40px !important;
   }
+  .sp_pt_30 {
+    padding-top: 30px !important;
+  }
   .sp_pt_20 {
     padding-top: 20px !important;
   }
@@ -305,6 +336,9 @@ p {
   }
   .sp_pb_40 {
     padding-bottom: 40px !important;
+  }
+  .sp_pb_30 {
+    padding-bottom: 30px !important;
   }
   .sp_pb_20 {
     padding-bottom: 20px !important;

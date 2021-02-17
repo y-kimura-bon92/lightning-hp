@@ -1,0 +1,199 @@
+
+
+/* -----------------------------
+      service 通信事業 左画面
+--------------------------------- */
+.split-left__inner {
+  background-image: url(../img/service_main.jpg);
+  background-size: 100%;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 35%;
+}
+.catch_copy {
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+.catch_copy h1 {
+  font-weight: 700 !important;
+  text-align: center;
+}
+.catch_copy span {
+  font-size: 50%;
+}
+
+
+
+/* -----------------------------
+      会員ページバナー
+--------------------------------- */
+.bannar_text {
+  text-shadow: 0 4px 5px rgba(0,0,0,.3);
+}
+
+.members_banner_btn a {
+  position: relative;
+  display: inline-block;
+  padding: .5em 4em;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+  border: 1px solid #fff;
+  background-color: #69b4d1;
+  width: 100%;
+}
+.members_banner_btn a:hover {
+  color: #69b4d1;
+  z-index: 1;
+}
+.members_banner_btn a::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* z-index: -1; */
+  content: '';
+  background: #eee;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
+.members_banner_btn a:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+  z-index: -1;
+  border: 1px solid #69b4d1;
+}
+
+@media screen and (max-width:768px) {
+  .members_banner_btn a {
+    padding: .5em;
+    font-size: 70%;
+  }
+}
+
+/* -----------------------------
+      料金デザイン
+--------------------------------- */
+/* 各コンテンツ背景色 */
+.plice,
+.commission,
+.option {
+  background-color: #e3eef8;
+  padding: 40px;
+  border-top: 3px solid #0e192d;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.1);
+}
+/* 料金コンテンツのリスト */
+.plice ul {
+  margin-left: 1rem !important;
+}
+/* テーブルの背景色 */
+table {
+  background-color: #fff;
+}
+th, td {
+  padding: 2rem !important;
+}
+
+@media screen and (max-width:768px) {
+  /* 各コンテンツ背景色 */
+  .plice,
+  .commission,
+  .option {
+    padding: 20px 10px;
+  }
+  th, td {
+    padding: 1rem 5px !important;
+  }
+}
+
+
+/* -----------------------------
+      オプションサービス
+--------------------------------- */
+/* オプションpdfボタンの区切り線 */
+.option_warranty,
+.option_tel {
+  border-right: 1px solid #fff;
+  box-shadow: 1px 0px 0px #97c0e5;
+}
+.option_natice {
+  background-color: #fff;
+  padding: 20px;
+}
+.option_natice ul {
+  margin-left: 1rem !important;
+}
+
+
+
+/* -----------------------------
+      申し込みコンテンツ
+--------------------------------- */
+.application_area {
+  border: 3px solid #0e192d;
+  border-radius: 5px;
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.1);
+}
+@media screen and (max-width:768px) {
+  .application_area {
+    padding: 20px 10px;
+  }
+}
+
+
+/* -----------------------------
+      ボタン
+--------------------------------- */
+/* デザインコンテンツのボタン */
+.img_content_btn a {
+  position: relative;
+  display: inline-block;
+  padding: 1em 4em;
+  border: 1px solid #0e192d;
+  color: #0e192d;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+  background-color: #fff;
+}
+.img_content_btn a:hover {
+  color: #fff;
+  z-index: 1;
+}
+.img_content_btn a::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* z-index: -1; */
+  content: '';
+  background: #0e192d;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
+.img_content_btn a:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+  z-index: -1;
+}
+
+@media screen and (max-width:768px) {
+  .img_content_btn a {
+    width: 100%;
+  }
+}
+

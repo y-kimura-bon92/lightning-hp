@@ -129,6 +129,10 @@
     position: absolute;
     right: 0;
     z-index: 10;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
   .nav-link {
     display: flex !important;
@@ -265,8 +269,8 @@ footer {
 }
 
 /* フッター右側コンテンツ */
-.footer_right_content li {/* リストのフォント */
-  font-size: 90%;
+.outside_list {/* リストのフォント */
+  font-size: 85%;
 }
 .footer_right_content li a {/* リストのフォント */
   color: #fff;
