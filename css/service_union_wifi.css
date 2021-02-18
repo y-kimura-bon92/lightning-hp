@@ -1,10 +1,10 @@
 
 
 /* -----------------------------
-      service union isp 左画面
+      service union wifi 左画面
 --------------------------------- */
 .split-left__inner {
-  background-image: url(../img/service_union_isp_main.jpg);
+  background-image: url(../img/service_union_wifi_main.jpg);
   background-size: 100%;
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.3);
@@ -50,7 +50,7 @@
   width: 100%;
 }
 .members_banner_btn a:hover {
-  color: #69b4d1;
+  color: #000;
   z-index: 1;
 }
 .members_banner_btn a::before {
@@ -81,68 +81,10 @@
 }
 
 /* -----------------------------
-      料金デザイン
+      wi-fi紹介コンテンツ
 --------------------------------- */
-/* 各コンテンツ背景色 */
-.plice,
-.commission,
-.option {
-  background-color: #e3eef8;
-  padding: 40px;
-  border-top: 3px solid #0e192d;
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,.1);
-}
-/* 料金コンテンツのリスト */
-.plice ul {
-  margin-left: 1rem !important;
-}
-/* テーブルの背景色 */
-table {
-  background-color: #fff;
-}
-th, td {
-  padding: 2rem !important;
-}
-
-@media screen and (max-width:768px) {
-  /* 各コンテンツ背景色 */
-  .plice,
-  .commission,
-  .option {
-    padding: 20px 10px;
-  }
-  th, td {
-    padding: 1rem 5px !important;
-  }
-}
-
-
-/* -----------------------------
-      オプションサービス
---------------------------------- */
-/* オプションpdfボタンの区切り線 */
-.option_warranty,
-.option_tel {
-  border-right: 1px solid #fff;
-  box-shadow: 1px 0px 0px #97c0e5;
-}
-.option_natice {
-  background-color: #fff;
-  padding: 20px;
-}
-.option_natice ul {
-  margin-left: 1rem !important;
-}
-
-@media screen and (max-width:768px) {
-  /* オプションpdfボタンの区切り線 */
-  .option_warranty,
-  .option_tel {
-    padding-bottom: 20px;
-    border-right: none;
-    border-bottom: 1px solid #fff;
-    box-shadow: 0px 1px 0px #97c0e5;
-  }
+.uni_fi_speed_img img {
+  border: 4px double #ddd;
 }
 
 
@@ -160,6 +102,46 @@ th, td {
 @media screen and (max-width:768px) {
   .application_area {
     padding: 20px 10px;
+  }
+}
+
+
+
+/* -----------------------------
+      オプションサービス
+--------------------------------- */
+.option {
+  background-color: #e3eef8;
+  padding: 40px;
+  border-top: 3px solid #0e192d;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.1);
+}
+/* オプションpdfボタンの区切り線 */
+.option_warranty,
+.option_tel {
+  border-right: 1px solid #fff;
+  box-shadow: 1px 0px 0px #97c0e5;
+}
+.option_natice {
+  background-color: #fff;
+  padding: 20px;
+}
+.option_natice ul {
+  margin-left: 1rem !important;
+}
+
+@media screen and (max-width:768px) {
+  /* 各コンテンツ背景色 */
+  .option {
+    padding: 20px 10px;
+  }
+  /* オプションpdfボタンの区切り線 */
+  .option_warranty,
+  .option_tel {
+    padding-bottom: 20px;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0px 1px 0px #97c0e5;
   }
 }
 
