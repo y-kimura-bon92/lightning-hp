@@ -64,20 +64,6 @@ $EXPIRATION2 = $_POST["EXPIRATION2"]; //カード有効期限（年）
 $CARDNAME    = $_POST["CARDNAME"];    //カード名義人
 $CARDSEC     = $_POST["CARDSEC"];     //セキュリティコード
 
-// 入力エラーを調べる
-$error = '';
-if ($NAME == "") {
-  $error = $error."<p>お名前が入力されていません。</p>";
-}
-if ($NAME == "") {
-  $error = $error."<p>お名前（カナ）が入力されていません。</p>";
-}
-if ($EMAIL == "") {
-  $error = $error."<p>メールアドレスが入力されていません。</p>";
-}
-if ($TEL == "") {
-  $error = $error."<p>電話番号が入力されていません。</p>";
-}
 
 ?>
 
@@ -244,7 +230,7 @@ if ($TEL == "") {
 
               <div class="btn_area mt_40">
                 <!-- 戻るボタン -->
-                <a type="button" href="../contact.html" class="btn btn-outline-danger w-25" style="border-width: 1px;">戻る</a>
+                <a type="button" href="#" onClick="history.back(); return false;" class="btn btn-outline-danger w-25" style="border-width: 1px;">戻る</a>
                 <!-- 送信ボタン -->
                 <input style="border-width: 1px;" type="submit" value="申込みを確定する" class="btn btn-blank btn-default bounceInRight w-25">
               </div>

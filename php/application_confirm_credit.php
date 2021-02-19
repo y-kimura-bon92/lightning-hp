@@ -1,88 +1,68 @@
 <?php
 session_start();
 
-// セッションデータを変数に代入
-$NAME        = $_SESSION["NAME"];        //お名前
-$NAME_KANA   = $_SESSION["NAME_KANA"];   //お名前（カナ）
-$EMAIL       = $_SESSION["EMAIL"];       //メールアドレス
-$TEL         = $_SESSION["TEL"];         //電話番号
-$BIRTH_YEAR  = $_SESSION["BIRTH_YEAR"];  //生年月日（年）
-$BIRTH_MONTH = $_SESSION["BIRTH_MONTH"]; //生年月日（月）
-$zip11       = $_SESSION["zip11"];       //郵便番号
-$addr11      = $_SESSION["addr11"];      //住所
-$bild11      = $_SESSION["bild11"];      //マンション・建物名
-$PEYMENT     = $_SESSION["PEYMENT"];     //支払方法
-$CARDCOMPANY = $_SESSION["CARDCOMPANY"]; //カード会社
-$CARDNUM1    = $_SESSION["CARDNUM1"];    //カード番号（1）
-$CARDNUM2    = $_SESSION["CARDNUM2"];    //カード番号（2）
-$CARDNUM3    = $_SESSION["CARDNUM3"];    //カード番号（3）
-$CARDNUM4    = $_SESSION["CARDNUM4"];    //カード番号（4）
-$EXPIRATION1 = $_SESSION["EXPIRATION1"]; //カード有効期限（月）
-$EXPIRATION2 = $_SESSION["EXPIRATION2"]; //カード有効期限（年）
-$CARDNAME    = $_SESSION["CARDNAME"];    //カード名義人
-$CARDSEC     = $_SESSION["CARDSEC"];     //セキュリティコード
+// セッションデータをセット
+if(isset(
+  $_POST['NAME'],
+  $_POST['NAME_KANA'],
+  $_POST['EMAIL'],
+  $_POST['TEL'],
+  $_POST['BIRTH_YEAR'],
+  $_POST['BIRTH_MONTH'],
+  $_POST['zip11'],
+  $_POST['addr11'],
+  $_POST['bild11'],
+  $_POST['PEYMENT'],
+  $_POST['CARDCOMPANY'],
+  $_POST['CARDNUM1'],
+  $_POST['CARDNUM2'],
+  $_POST['CARDNUM3'],
+  $_POST['CARDNUM4'],
+  $_POST['EXPIRATION1'],
+  $_POST['EXPIRATION2'],
+  $_POST['CARDNAME'],
+  $_POST['CARDSEC'])){
+    $_SESSION['NAME']        = $_POST['NAME'];
+    $_SESSION['NAME_KANA']   = $_POST['NAME_KANA'];
+    $_SESSION['EMAIL']       = $_POST['EMAIL'];
+    $_SESSION['TEL']         = $_POST['TEL'];
+    $_SESSION['BIRTH_YEAR']  = $_POST['BIRTH_YEAR'];
+    $_SESSION['BIRTH_MONTH'] = $_POST['BIRTH_MONTH'];
+    $_SESSION['zip11']       = $_POST['zip11'];
+    $_SESSION['addr11']      = $_POST['addr11'];
+    $_SESSION['bild11']      = $_POST['bild11'];
+    $_SESSION['PEYMENT']     = $_POST['PEYMENT'];
+    $_SESSION['CARDCOMPANY'] = $_POST['CARDCOMPANY'];
+    $_SESSION['CARDNUM1']    = $_POST['CARDNUM1'];
+    $_SESSION['CARDNUM2']    = $_POST['CARDNUM2'];
+    $_SESSION['CARDNUM3']    = $_POST['CARDNUM3'];
+    $_SESSION['CARDNUM4']    = $_POST['CARDNUM4'];
+    $_SESSION['EXPIRATION1'] = $_POST['EXPIRATION1'];
+    $_SESSION['EXPIRATION2'] = $_POST['EXPIRATION2'];
+    $_SESSION['CARDNAME']    = $_POST['CARDNAME'];
+    $_SESSION['CARDSEC']     = $_POST['CARDSEC'];
+}
 
-$NAME        = htmlspecialchars($NAME, ENT_QUOTES);        //お名前
-$NAME_KANA   = htmlspecialchars($NAME_KANA, ENT_QUOTES);   //お名前（カナ）
-$EMAIL       = htmlspecialchars($EMAIL, ENT_QUOTES);       //メールアドレス
-$TEL         = htmlspecialchars($TEL, ENT_QUOTES);         //電話番号
-$BIRTH_YEAR  = htmlspecialchars($BIRTH_YEAR, ENT_QUOTES);  //生年月日（年）
-$BIRTH_MONTH = htmlspecialchars($BIRTH_MONTH, ENT_QUOTES); //生年月日（月）
-$zip11       = htmlspecialchars($zip11, ENT_QUOTES);       //郵便番号
-$addr11      = htmlspecialchars($addr11, ENT_QUOTES);      //住所
-$bild11      = htmlspecialchars($bild11, ENT_QUOTES);      //マンション・建物名
-$PEYMENT     = htmlspecialchars($PEYMENT, ENT_QUOTES);     //支払方法
-$CARDCOMPANY = htmlspecialchars($CARDCOMPANY, ENT_QUOTES); //カード会社
-$CARDNUM1    = htmlspecialchars($CARDNUM1, ENT_QUOTES);    //カード番号（1）
-$CARDNUM2    = htmlspecialchars($CARDNUM2, ENT_QUOTES);    //カード番号（2）
-$CARDNUM3    = htmlspecialchars($CARDNUM3, ENT_QUOTES);    //カード番号（3）
-$CARDNUM4    = htmlspecialchars($CARDNUM4, ENT_QUOTES);    //カード番号（4）
-$EXPIRATION1 = htmlspecialchars($EXPIRATION1, ENT_QUOTES); //カード有効期限（月）
-$EXPIRATION2 = htmlspecialchars($EXPIRATION2, ENT_QUOTES); //カード有効期限（年）
-$CARDNAME    = htmlspecialchars($CARDNAME, ENT_QUOTES);    //カード名義人
-$CARDSEC     = htmlspecialchars($CARDSEC, ENT_QUOTES);     //セキュリティコード
-
-$honbun1  = '';
-$honbun2  = "株式会社UNION UNION-ISP お申し込み\n\n";
-$honbun3  = "【お名前】\n";
-$honbun4  = "   {$NAME}\n\n";
-$honbun5  = "【お名前（カナ）】\n";
-$honbun6  = "   {$NAME_KANA}\n\n";
-$honbun7  = "【メールアドレス】\n";
-$honbun8  = "   {$EMAIL}\n\n";
-$honbun9  = "【電話番号】\n";
-$honbun10 = "   {$TEL}\n\n";
-$honbun11 = "【生年月日】\n";
-$honbun12 = "   {$BIRTH_YEAR}年{$BIRTH_MONTH}月\n\n";
-$honbun13 = "【郵便番号】";
-$honbun14 = "   {$zip11}\n\n";
-$honbun15 = "【住所】";
-$honbun16 = "   {$addr11}\n\n";
-$honbun17 = "【マンション・建物名】";
-$honbun18 = "   {$bild11}\n\n";
-$honbun19 = "【支払方法】";
-$honbun20 = "   {$PEYMENT}\n\n";
-$honbun21 = "【カード会社】";
-$honbun22 = "   {$CARDCOMPANY}\n\n";
-$honbun23 = "【カード番号】";
-$honbun24 = "   {$CARDNUM1}-{$CARDNUM2}-{$CARDNUM3}-{$CARDNUM4}\n\n";
-$honbun25 = "【カード有効期限】";
-$honbun26 = "   {$EXPIRATION1}／{$EXPIRATION2}\n\n";
-$honbun27 = "【カード名義人】";
-$honbun28 = "   {$CARDNAME}\n\n";
-$honbun29 = "【セキュリティコード】";
-$honbun30 = "   {$CARDSEC}\n\n";
-
-//エンコード処理
-mb_language("japanese");
-mb_internal_encoding("UTF-8");
-
-$mail_to = "mirai1735@icloud.com";
-$mail_subject = "UNION-ISP申し込みフォームより";
-$mail_body = $honbun1.$honbun2.$honbun3.$honbun4.$honbun5.$honbun6.$honbun7.$honbun8.$honbun9.$honbun10.$honbun11.$honbun12.$honbun13.$honbun14.$honbun15.$honbun16.$honbun17.$honbun18.$honbun19.$honbun20.$honbun21.$honbun22.$honbun23.$honbun24.$honbun25.$honbun26.$honbun27.$honbun28.$honbun29.$honbun30;
-$mail_header = "form:".$EMAIL;
-
-$mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
+// POSTからデータを受け取る
+$NAME        = $_POST["NAME"];        //お名前
+$NAME_KANA   = $_POST["NAME_KANA"];   //お名前（カナ）
+$EMAIL       = $_POST["EMAIL"];       //メールアドレス
+$TEL         = $_POST["TEL"];         //電話番号
+$BIRTH_YEAR  = $_POST["BIRTH_YEAR"];  //生年月日（年）
+$BIRTH_MONTH = $_POST["BIRTH_MONTH"]; //生年月日（月）
+$zip11       = $_POST["zip11"];       //郵便番号
+$addr11      = $_POST["addr11"];      //住所
+$bild11      = $_POST["bild11"];      //マンション・建物名
+$PEYMENT     = $_POST["PEYMENT"];     //支払方法
+$CARDCOMPANY = $_POST["CARDCOMPANY"]; //カード会社
+$CARDNUM1    = $_POST["CARDNUM1"];    //カード番号（1）
+$CARDNUM2    = $_POST["CARDNUM2"];    //カード番号（2）
+$CARDNUM3    = $_POST["CARDNUM3"];    //カード番号（3）
+$CARDNUM4    = $_POST["CARDNUM4"];    //カード番号（4）
+$EXPIRATION1 = $_POST["EXPIRATION1"]; //カード有効期限（月）
+$EXPIRATION2 = $_POST["EXPIRATION2"]; //カード有効期限（年）
+$CARDNAME    = $_POST["CARDNAME"];    //カード名義人
+$CARDSEC     = $_POST["CARDSEC"];     //セキュリティコード
 
 
 ?>
@@ -90,7 +70,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lightning</title>
@@ -103,7 +83,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
 
 <body>
 
-<div class="split">
+  <div class="split">
     <!-- --------------------------------------------------------------------------
       スプリットレイアウト fixed
     ------------------------------------------------------------------------------ -->
@@ -112,7 +92,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
 
         <!-- 左画面メインビジュアル -->
         <div class="jumbotron catch_copy">
-          <h1 class="display-3">APPLICATION<br><span class="">お申し込み（完了画面）</span></h1>
+          <h1 class="display-3">APPLICATION<br><span class="">UNION クレジットカード保証 お申し込み<br>（確認画面）</span></h1>
         </div>
       </div>
     </div>
@@ -180,27 +160,82 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
 
 
 
-        <!-- お問い合わせ完了画面コンテンツ -->
+        <!-- お申し込みコンテンツ -->
         <div class="container mt_120 mb_120">
           <div class="mb_80">
-            <h2 class="first_letter_design">お申し込み（完了画面） ―</h2>
+            <h2 class="first_letter_design">お申し込み（確認画面） ―</h2>
           </div>
 
-          <!-- お申し込みのお礼 -->
-          <div>
-            <p>お申し込み有難うございます。
-              <br>送信完了致しました。
-              <br>内容を確認致しますので少々お待ち下さい。</p>
+          <!-- 確認画面送信フォーム -->
+          <div class="confirmation mt_40">
+            <form action="application_complete_credit.php" method="post">
+              <table class="table">
+                <tr class="row">
+                  <th class="col-4">お名前</th>
+                  <td class="col-8"><?php echo $_POST["NAME"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">お名前（カナ）</th>
+                  <td class="col-8"><?php echo $_POST["NAME_KANA"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">メールアドレス</th>
+                  <td class="col-8"><?php echo $_POST["EMAIL"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">電話番号</th>
+                  <td class="col-8"><?php echo $_POST["TEL"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">生年月日</th>
+                  <td class="col-8"><?php echo $_POST["BIRTH_YEAR"]; ?>年<?php echo $_POST["BIRTH_MONTH"]; ?>月</td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">郵便番号</th>
+                  <td class="col-8"><?php echo $_POST["zip11"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">住所</th>
+                  <td class="col-8"><?php echo $_POST["addr11"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">マンション・建物名</th>
+                  <td class="col-8"><?php echo $_POST["bild11"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">支払方法</th>
+                  <td class="col-8"><?php echo $_POST["PEYMENT"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">カード会社</th>
+                  <td class="col-8"><?php echo $_POST["CARDCOMPANY"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">カード番号</th>
+                  <td class="col-8"><?php echo $_POST["CARDNUM1"]; ?> - <?php echo $_POST["CARDNUM2"]; ?> - <?php echo $_POST["CARDNUM3"]; ?> - <?php echo $_POST["CARDNUM4"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">カード有効期限</th>
+                  <td class="col-8"><?php echo $_POST["EXPIRATION1"]; ?>／<?php echo $_POST["EXPIRATION2"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">カード名義人</th>
+                  <td class="col-8"><?php echo $_POST["CARDNAME"]; ?></td>
+                </tr>
+                <tr class="row">
+                  <th class="col-4">セキュリティコード</th>
+                  <td class="col-8"><?php echo $_POST["CARDSEC"]; ?></td>
+                </tr>
+              </table>
 
-            <!-- applicationページに戻る -->
-            <div class="btn_area mt_40">
-              <p>
-                <a href="#" class="btn btn-outline-danger w-25" onClick="history.go(-2); return false;">申し込みフォームへ</a>
-                <a href="../index.html" class="btn btn-outline-danger w-25">TOPページへ</a>
-              </p>
-            </div>
+              <div class="btn_area mt_40">
+                <!-- 戻るボタン -->
+                <a type="button" href="#" onClick="history.back(); return false;" class="btn btn-outline-danger w-25" style="border-width: 1px;">戻る</a>
+                <!-- 送信ボタン -->
+                <input style="border-width: 1px;" type="submit" value="申込みを確定する" class="btn btn-blank btn-default bounceInRight w-25">
+              </div>
+            </form>
           </div>
-          
         </div>
 
 
@@ -268,12 +303,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
 
       </div>
     </div>
-
-
-
   </div>
-
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -281,11 +311,6 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   <script src="js/index.js"></script>
-
-  <!-- セッション終了 -->
-  <?php
-  unset($_POST['NAME'],$_POST['NAME_KANA'],$_POST['EMAIL'],$_POST['TEL'],$_POST['FAX'],$_POST['MESSAGE']);
-  ?>
 
 </body>
 </html>

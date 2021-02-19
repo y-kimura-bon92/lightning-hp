@@ -43,7 +43,7 @@ $CARDNAME    = htmlspecialchars($CARDNAME, ENT_QUOTES);    //カード名義人
 $CARDSEC     = htmlspecialchars($CARDSEC, ENT_QUOTES);     //セキュリティコード
 
 $honbun1  = '';
-$honbun2  = "株式会社UNION UNION-ISP お申し込み\n\n";
+$honbun2  = "株式会社UNION クレジットカード保証 お申し込み\n\n";
 $honbun3  = "【お名前】\n";
 $honbun4  = "   {$NAME}\n\n";
 $honbun5  = "【お名前（カナ）】\n";
@@ -78,7 +78,7 @@ mb_language("japanese");
 mb_internal_encoding("UTF-8");
 
 $mail_to = "mirai1735@icloud.com";
-$mail_subject = "UNION-ISP申し込みフォームより";
+$mail_subject = "UNION クレジットカード保証申し込みフォームより";
 $mail_body = $honbun1.$honbun2.$honbun3.$honbun4.$honbun5.$honbun6.$honbun7.$honbun8.$honbun9.$honbun10.$honbun11.$honbun12.$honbun13.$honbun14.$honbun15.$honbun16.$honbun17.$honbun18.$honbun19.$honbun20.$honbun21.$honbun22.$honbun23.$honbun24.$honbun25.$honbun26.$honbun27.$honbun28.$honbun29.$honbun30;
 $mail_header = "form:".$EMAIL;
 

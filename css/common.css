@@ -246,6 +246,10 @@ footer {
     border-right: none;
     border-bottom: 1px solid #fff;
   }
+  /* フッターロゴ */
+  .footer_logo {
+    width: 50%;
+  }
 }
 
 /* フッター左コンテンツのテキスト行間 */
