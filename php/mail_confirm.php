@@ -46,8 +46,11 @@ if ($TEL == "") {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lightning</title>
+  <title>UNION</title>
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/setting.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/contact.css">
@@ -82,9 +85,12 @@ if ($TEL == "") {
         --------------------------- -->
         <header class="mt_20 sp_mt_0 container">
           <div class="header_bar d-flex">
+
+            <!-- ヘッダーロゴ -->
             <div class="header_logo sp_pt_20">
-              <h2><a href="index.html">Lightning</a></h2>
+              <h2><a href="index.html"><img src="../img/logoBK.png" alt=""></a></h2>
             </div>
+
             <!-- ヘッダーメニュー -->
             <div class="header_nav">
 
@@ -134,9 +140,9 @@ if ($TEL == "") {
 
 
         <!-- お問い合わせ確認画面コンテンツ -->
-        <div class="container mt_120 mb_120">
+        <div class="container mt_120 mb_120 sp_mt_80">
           <div class="mb_80">
-            <h2 class="first_letter_design">お問い合わせ（確認画面） ―</h2>
+            <h2 class="first_letter_design">お問い合わせ<br>（確認画面） ―</h2>
           </div>
 
           <!-- 注意書き -->
@@ -195,7 +201,8 @@ if ($TEL == "") {
         <footer>
           <div class="footer_content container pt_40 pb_40">
             <!-- フッターロゴ -->
-            <h2 class="pb_40">Lightning</h2>
+            <h2 class="pb_40"><a href="index.html"><img class="footer_logo" src="../img/logoBKWH.png" alt=""></a></h2>
+
             <div class="row">
               <!-- フッター企業概要 -->
               <div class="col-lg-4 footer_left_content sp_pb_40">
@@ -209,7 +216,7 @@ if ($TEL == "") {
               <div class="col-lg-4 footer_center_content sp_mt_40 sp_pb_40">
                 <p class="mb_20">お問い合わせ</p>
                 <p>ご不明点など、お気軽にお問い合わせ下さい。</p>
-                <p class="footer_content_btn text-center"><a href="../contact.html" class="d-inline-block">メールフォーム</a></p>
+                <p class="footer_content_btn text-center"><a href="contact.html" class="d-inline-block">メールフォーム</a></p>
               </div>
 
               <!-- フッターサイトマップ -->
@@ -217,36 +224,51 @@ if ($TEL == "") {
                 <p>サイトマップ</p>
                 <ul class="outside_list">
                   <li><a href="index.html">top</a></li>
+                  <li><a href="company.html">代表メッセージ</a></li>
                   <li>事業内容
                     <ul class="inside_list">
-                      <li><a href="service_internet.html">プロバイダ</a> - <a href="">申し込み</a></li>
-                      <li><a href="service_internet.html#uni_wifi">UNION WI-FI</a> - <a href="">申し込み</a></li>
-                      <li><a href="service_internet.html#analog">アナログ戻し</a> - <a href="">申し込み</a></li>
-                      <li><a href="service_webdesign.html">WEBデザイン</a></li>
-                      <li><a href="service_other.html#iphone_repear">iphone修理</a></li>
-                      <li><a href="service_other.html#curedit">クレカ保証</a> - <a href="">申し込み</a></li>
-                      <li><a href="service_other.html#mutual">共済</a></li>
+                      <li><!-- 通信事業 -->
+                        <a href="service_internet.html">通信事業</a>
+                        <ul style="text-indent: 1em;">
+                          <li><a href="service_union_isp.html">UNION ISP</a> - <a href="application_form_unisp.html">申し込み</a></li>
+                          <li><a href="service_union_wifi.html">UNION WI-FI</a> - <a href="application_form_uni-wi-fi.html">申し込み</a></li>
+                          <li><a href="service_internet.html#analog">アナログ戻し</a> - <a href="application_form_analog.html">申し込み</a></li>
+                        </ul>
+                      </li>
+                      <li><!-- WEBデザイン -->
+                        <a href="service_webdesign.html">WEBデザイン</a>
+                      </li>
+                      <li><!-- その他事業 -->
+                        <a href="service_other.html">その他事業</a>
+                        <ul style="text-indent: 1em;">
+                          <li><a href="service_other.html#iphone_repear">iphone修理</a></li>
+                          <li><a href="service_other.html#curedit">クレカ保証</a> - <a href="application_form_credit.html">申し込み</a></li>
+                          <li><a href="service_other.html#mutual">共済</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
                   <li><a href="company.html">企業内容・アクセス</a></li>
                   <li><a href="contact.html">お問い合わせ</a></li>
                 </ul>
               </div>
+
             </div>
           </div>
 
           <!-- フッターメニュー -->
-          <div class="footer_menu container">
+          <!-- <div class="footer_menu container">
             <ul class="text-center">
               <li class="d-inline-block"><a href="philosophy.html">MESSAGE</a></li>
               <li class="d-inline-block"><a href="service.html">SERVICE</a></li>
               <li class="d-inline-block"><a href="recruit.html">RECRUIT</a></li>
               <li class="d-inline-block"><a href="company.html">COMPANY</a></li>
             </ul>
-          </div>
+          </div> -->
+
           <!-- コピーライト -->
           <div class="footer_copy_light container">
-            <p class="text-center small">Copyright © 2021 Lightning Inc. All Rights Reserved.</p>
+            <p class="text-center small">Copyright © 2021 UNION Inc. All Rights Reserved.</p>
           </div>
         </footer>
 

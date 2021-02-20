@@ -31,6 +31,9 @@
 /* -----------------------------
       コンテンツ
 --------------------------------- */
+/* -----------------------------
+      ボタン
+--------------------------------- */
 /* デザインコンテンツのボタン */
 .img_content_btn a {
   position: relative;
@@ -41,9 +44,11 @@
   text-align: center;
   text-decoration: none;
   transition: .3s;
+  background-color: #fff;
 }
 .img_content_btn a:hover {
   color: #fff;
+  z-index: 1;
 }
 .img_content_btn a::before {
   position: absolute;
@@ -51,7 +56,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  /* z-index: -1; */
   content: '';
   background: #0e192d;
   transform-origin: right top;
@@ -61,4 +66,12 @@
 .img_content_btn a:hover::before {
   transform-origin: left top;
   transform: scale(1, 1);
+  z-index: -1;
 }
+
+@media screen and (max-width:768px) {
+  .img_content_btn a {
+    width: 100%;
+  }
+}
+

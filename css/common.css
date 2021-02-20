@@ -48,6 +48,9 @@
 .header_logo h2 a {
   color: #000;
 }
+.header_logo img {
+  width: 75%;
+}
 
 /* ロゴとメニューの間の余白 */
 .header_nav {
@@ -141,44 +144,6 @@
 }
 
 
-
-/* ヘッダーキャッチコピー */
-.jumbotron-fluid {
-  background-image: url("../img/jumbotron_bg.jpg");
-  background-size: 100%;
-}
-.jumbotron .container {
-  padding: 160px 60px;
-}
-@media screen and (max-width:768px) {
-  .jumbotron-fluid {
-    margin: 0 calc(50% - 50vw);
-  }
-}
-
-/* キャッチコピー下ロゴ */
-.jumbotron h3 {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.6);
-  width: 175px;
-  height: 175px;
-  line-height: 175px;
-  margin: 40px auto;
-}
-.jumbotron h3 span {
-  background-image: -webkit-linear-gradient(315deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
-  background-image: linear-gradient(135deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@media screen and (max-width:768px) {
-  .jumbotron .container {
-    padding: 120px 20px;
-  }
-}
-
-
-
 /* -----------------------------
       サイトテーマオリジナル見出し
 --------------------------------- */
@@ -228,6 +193,9 @@
 footer {
   border-top: 1px solid #fff;
   z-index: 1;
+}
+.footer_logo {
+  width: 20%;
 }
 
 .footer_content { /* footerの中身 */

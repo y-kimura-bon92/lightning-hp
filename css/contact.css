@@ -57,7 +57,11 @@
   margin: 0; 
   padding-left: 2rem !important;
 }
-
+@media screen and (max-width:768px) {
+  .notes_contact ul {
+    padding-left: 1rem !important;
+  }
+}
 
 /* -----------------------------
       contact form
