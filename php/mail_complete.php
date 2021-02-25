@@ -52,7 +52,9 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UNION</title>
+  <meta name="keywords" content="株式会社UNION,株式会社ユニオン,UNION,ユニオン,ゆにおん">
+  <meta name="description" content="株式会社UNIONは、お客様のニーズに合わせた幅広い商材を取り扱う販売代理店です。お客様一人一人に最適のプラン、商品をご提案させていただきます。">
+  <title>お問い合わせ（完了画面）| 株式会社UNION｜General Industry Office</title>
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <!-- fontawesome -->
@@ -74,7 +76,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
 
         <!-- 左画面メインビジュアル -->
         <div class="jumbotron catch_copy">
-          <h1 class="display-3">CONTACT<br><span class="">お問い合わせ（完了画面）</span></h1>
+          <h1 class="display-3">CONTACT<br><span class="">お問い合わせ<br>（完了画面）</span></h1>
         </div>
       </div>
     </div>
@@ -194,8 +196,8 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
               <!-- フッター企業概要 -->
               <div class="col-lg-4 footer_left_content sp_pb_40">
                 <p>株式会社UNION</p>
-                <p>〒530-0002 大阪市中央区1-2-3 <br>ビル</p>
-                <p>TEL：06-1234-5678</p>
+                <p>〒541-0056 大阪府大阪市中央区久太郎町3丁目1-27 <br>船場大西ビル1階</p>
+                <p>TEL：050-3176-1156</p>
                 <p class="sp_mb_0">事業内容：通信事業、webデザイン事業、海外事業、コンテンツ事業、不動産事業、アパレル事業</p>
               </div>
 
@@ -220,6 +222,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
                           <li><a href="service_union_isp.html">UNION ISP</a> - <a href="application_form_unisp.html">申し込み</a></li>
                           <li><a href="service_union_wifi.html">UNION WI-FI</a> - <a href="application_form_uni-wi-fi.html">申し込み</a></li>
                           <li><a href="service_internet.html#analog">アナログ戻し</a> - <a href="application_form_analog.html">申し込み</a></li>
+                          <li><a href="application_form_docomohikari.html">ドコモ光お申し込み</a></li>
                         </ul>
                       </li>
                       <li><!-- WEBデザイン -->
