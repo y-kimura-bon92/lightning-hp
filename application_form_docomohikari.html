@@ -149,7 +149,6 @@
             </div>
 
 
-
             <div class="note_num02 mt_80 sp_mt_40">
               <h4 class="subpage_sub_h4__2">2.プロバイダのご確認</h4>
               <p class="">現在「フレッツ光」でご契約中のプロバイダが「ドコモ光」でもそのままご利用になれます。</p>
@@ -173,7 +172,6 @@
                 </li>
               </ul>
             </div>
-
 
 
             <div class="note_num03 mt_80 sp_mt_40">
@@ -202,10 +200,33 @@
             <h4 class="subpage_sub_h4">申し込みフォーム</h4>
             <div class="contact-form mt_20">
               <form role="form" method="post" action="php/application_confirm_dokomohikari.php">
+                
+                <script>
+                  function setDisable(target){
+                    $(target).prop("disabled", true);  
+                  }
+                  function setEnable(target){
+                    $(target).prop("disabled", false);  
+                  }
+                </script>
+
+                <div class="form-group">
+                  <label for="" class="mt_0">お申込内容</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="APP_DETALIS" value="新規" id="app_detalis_new" placeholder="新規" onclick="setDisable('#comment1')">
+                    <label class="form-check-label mt_0" for="app_detalis_new">新規</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="APP_DETALIS" value="転用" id="app_detalis_diver" placeholder="転用" onclick="setEnable('#comment1')" checked>
+                    <label class="form-check-label mt_0 mb_0" for="app_detalis_diver">転用</label>
+                  </div>
+                </div>
+
                 <!-- 転用番号 -->
                 <div class="form-group">
-                  <label for="" class="mt_0">転用番号</label>
-                  <input type="text" class="form-control input-lg" name="TRANSFER_NUMBER" placeholder="W1234-5678-90">
+                  <label for="" class="">転用番号</label>
+                  <input type="text" class="form-control input-lg" id="comment1" name="TRANSFER_NUMBER" placeholder="W1234-5678-90" maxlength="14">
+                  <p class="small text-danger">※ご新規の方は入力不要</p>
                 </div>
 
                 <!-- 名前 -->

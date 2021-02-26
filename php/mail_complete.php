@@ -174,8 +174,8 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
             <!-- CONTACTページに戻る -->
             <div class="btn_area mt_40">
               <p>
-                <a href="#" class="btn btn-outline-danger w-25" onClick="history.go(-2); return false;">お問い合わせページへ</a>
-                <a href="../index.html" class="btn btn-outline-danger w-25">TOPページへ</a>
+                <a href="#" class="btn btn-outline-danger" onClick="history.go(-2); return false;">お問い合わせページへ</a>
+                <a href="../index.html" class="btn btn-outline-danger">TOPページへ</a>
               </p>
             </div>
           </div>

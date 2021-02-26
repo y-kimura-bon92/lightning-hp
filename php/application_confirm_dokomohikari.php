@@ -3,6 +3,7 @@ session_start();
 
 // セッションにデータをセット
 if (isset (
+  $_POST['APP_DETALIS'],
   $_POST['TRANSFER_NUMBER'],
   $_POST['NAME'],
   $_POST['NAME_KANA'],
@@ -22,6 +23,7 @@ if (isset (
   $_POST['CONST_DATE'],
   $_POST['REMARKS']
 )) {
+  $_SESSION['APP_DETALIS']       = $_POST['APP_DETALIS'];
   $_SESSION['TRANSFER_NUMBER']   = $_POST['TRANSFER_NUMBER'];
   $_SESSION['NAME']              = $_POST['NAME'];
   $_SESSION['NAME_KANA']         = $_POST['NAME_KANA'];
@@ -43,6 +45,7 @@ if (isset (
 }
 
   // 変数にPOSTデータを代入
+  $APP_DETALIS       = $_POST['APP_DETALIS'];       //申し込み内容（新規／転用）
   $TRANSFER_NUMBER   = $_POST['TRANSFER_NUMBER'];   //転用番号
   $NAME              = $_POST['NAME'];              //名前
   $NAME_KANA         = $_POST['NAME_KANA'];         //名前（カナ）
@@ -177,6 +180,12 @@ if (isset (
             <form action="application_complete_docomohikari.php" method="post">
               <table class="table">
                 <tr class="row">
+                  <th class="col-4">申し込み内容（新規／転用）</th>
+                  <td class="col-8">
+                    <?php echo $_POST["APP_DETALIS"]; ?>
+                  </td>
+                </tr>
+                <tr class="row">
                   <th class="col-4">転用番号</th>
                   <td class="col-8"><?php echo $_POST["TRANSFER_NUMBER"]; ?></td>
                 </tr>
@@ -244,9 +253,9 @@ if (isset (
 
               <div class="btn_area mt_40">
                 <!-- 戻るボタン -->
-                <a type="button" href="#" onClick="history.back(); return false;" class="btn btn-outline-danger w-25" style="border-width: 1px;">戻る</a>
+                <a type="button" href="#" onClick="history.back(); return false;" class="btn btn-outline-danger" style="border-width: 1px;">戻る</a>
                 <!-- 送信ボタン -->
-                <input style="border-width: 1px;" type="submit" value="申込みを確定する" class="btn btn-blank btn-default bounceInRight w-25">
+                <input style="border-width: 1px;" type="submit" value="申込みを確定する" class="btn btn-blank btn-default bounceInRight">
               </div>
             </form>
           </div>

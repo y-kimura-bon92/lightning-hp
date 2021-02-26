@@ -238,9 +238,9 @@ $CARDSEC     = $_POST["CARDSEC"];     //セキュリティコード
 
               <div class="btn_area mt_40">
                 <!-- 戻るボタン -->
-                <a type="button" href="#" onClick="history.back(); return false;" class="btn btn-outline-danger w-25" style="border-width: 1px;">戻る</a>
+                <a type="button" href="#" onClick="history.back(); return false;" class="btn btn-outline-danger" style="border-width: 1px;">戻る</a>
                 <!-- 送信ボタン -->
-                <input style="border-width: 1px;" type="submit" value="申込みを確定する" class="btn btn-blank btn-default bounceInRight w-25">
+                <input style="border-width: 1px;" type="submit" value="申込みを確定する" class="btn btn-blank btn-default bounceInRight">
               </div>
             </form>
           </div>

@@ -2,6 +2,7 @@
 session_start();
 
 // 変数にセッションデータを代入
+$APP_DETALIS       = $_SESSION['APP_DETALIS'];       //申し込み内容（新規／転用）
 $TRANSFER_NUMBER   = $_SESSION['TRANSFER_NUMBER'];   //転用番号
 $NAME              = $_SESSION['NAME'];              //名前
 $NAME_KANA         = $_SESSION['NAME_KANA'];         //名前（カナ）
@@ -22,56 +23,63 @@ $CONST_DATE        = $_SESSION['CONST_DATE'];        //工事希望日
 $REMARKS           = $_SESSION['REMARKS'];           //備考
 
 
+$APP_DETALIS       = htmlspecialchars($APP_DETALIS, ENT_QUOTES);
 $TRANSFER_NUMBER   = htmlspecialchars($TRANSFER_NUMBER, ENT_QUOTES);
-$NAME              = htmlspecialchars($NAME, ENT_QUOTES); $NAME_KANA         = htmlspecialchars($NAME_KANA, ENT_QUOTES);
+$NAME              = htmlspecialchars($NAME, ENT_QUOTES);
+$NAME_KANA         = htmlspecialchars($NAME_KANA, ENT_QUOTES);
 $TEL               = htmlspecialchars($TEL, ENT_QUOTES);
 $BIRTH_YEAR        = htmlspecialchars($BIRTH_YEAR, ENT_QUOTES);
 $BIRTH_MONTH       = htmlspecialchars($BIRTH_MONTH, ENT_QUOTES);
 $BIRTH_DAY         = htmlspecialchars($BIRTH_DAY, ENT_QUOTES);
-$GENDER            = htmlspecialchars($GENDER, ENT_QUOTES);$zip11             = htmlspecialchars($zip11, ENT_QUOTES);
-$addr11            = htmlspecialchars($addr11, ENT_QUOTES);$bild11            = htmlspecialchars($bild11, ENT_QUOTES);
+$GENDER            = htmlspecialchars($GENDER, ENT_QUOTES);
+$zip11             = htmlspecialchars($zip11, ENT_QUOTES);
+$addr11            = htmlspecialchars($addr11, ENT_QUOTES);
+$bild11            = htmlspecialchars($bild11, ENT_QUOTES);
 $PLAN              = htmlspecialchars($PLAN, ENT_QUOTES);
 $OPTION            = htmlspecialchars($OPTION, ENT_QUOTES);
 $ISP               = htmlspecialchars($ISP, ENT_QUOTES);
-$CONSTRUCTION_COST = htmlspecialchars($CONSTRUCTION_COST, ENT_QUOTES);$CONFIRM_CALL      = htmlspecialchars($CONFIRM_CALL, ENT_QUOTES);
+$CONSTRUCTION_COST = htmlspecialchars($CONSTRUCTION_COST, ENT_QUOTES);
+$CONFIRM_CALL      = htmlspecialchars($CONFIRM_CALL, ENT_QUOTES);
 $CONST_DATE        = htmlspecialchars($CONST_DATE, ENT_QUOTES);
 $REMARKS           = htmlspecialchars($REMARKS, ENT_QUOTES);
 
 // メール作成
 $honbun1  = '';
 $honbun2  = "株式会社UNION ドコモ光 お申し込み\n\n";
+$honbun35 = "【申し込み内容（新規／転用）】\n";
+$honbun36 = "\t{$APP_DETALIS}\n\n";
 $honbun3  = "【転用番号】\n";
-$honbun4  = "{$TRANSFER_NUMBER}\n\n";
+$honbun4  = "\t{$TRANSFER_NUMBER}\n\n";
 $honbun5  = "【お名前】\n";
-$honbun6  = "{$NAME}\n\n";
+$honbun6  = "\t{$NAME}\n\n";
 $honbun7  = "【名前（カナ）】\n";
-$honbun8  = "{$NAME_KANA}\n\n";
+$honbun8  = "\t{$NAME_KANA}\n\n";
 $honbun9  = "【電話番号】\n";
-$honbun10 = "{$TEL}\n\n";
+$honbun10 = "\t{$TEL}\n\n";
 $honbun11 = "【生年月日】\n";
-$honbun12 = "{$BIRTH_YEAR}年{$BIRTH_MONTH}月{$BIRTH_DAY}日\n\n";
+$honbun12 = "\t{$BIRTH_YEAR}年{$BIRTH_MONTH}月{$BIRTH_DAY}日\n\n";
 $honbun13 = "【性別】\n";
-$honbun14 = "{$GENDER}\n\n";
+$honbun14 = "\t{$GENDER}\n\n";
 $honbun15 = "【郵便番号】\n";
 $honbun16 = "〒{$zip11}\n\n";
 $honbun17 = "【住所】\n";
-$honbun18 = "{$addr11}\n\n";
+$honbun18 = "\t{$addr11}\n\n";
 $honbun19 = "【マンション・建物名】\n";
-$honbun20 = "{$bild11}\n\n";
+$honbun20 = "\t{$bild11}\n\n";
 $honbun21 = "【プラン名】\n";
-$honbun22 = "{$PLAN}\n\n";
+$honbun22 = "\t{$PLAN}\n\n";
 $honbun23 = "【オプション】\n";
-$honbun24 = "{$OPTION}\n\n";
+$honbun24 = "\t{$OPTION}\n\n";
 $honbun25 = "【既存ISP】\n";
-$honbun26 = "{$ISP}\n\n";
+$honbun26 = "\t{$ISP}\n\n";
 $honbun27 = "【工事費】\n";
-$honbun28 = "{$CONSTRUCTION_COST}\n\n";
+$honbun28 = "\t{$CONSTRUCTION_COST}\n\n";
 $honbun29 = "【確認電話】\n";
-$honbun30 = "{$CONFIRM_CALL}\n\n";
+$honbun30 = "\t{$CONFIRM_CALL}\n\n";
 $honbun31 = "【工事希望日】\n";
-$honbun32 = "{$CONST_DATE}\n\n";
+$honbun32 = "\t{$CONST_DATE}\n\n";
 $honbun33 = "【備考】\n";
-$honbun34 = "{$REMARKS}\n\n";
+$honbun34 = "\t{$REMARKS}\n\n";
 
 //エンコード処理
 mb_language("japanese");
@@ -79,7 +87,7 @@ mb_internal_encoding("UTF-8");
 
 $mail_to = "mirai1735@icloud.com";
 $mail_subject = "UNION ドコモ光申し込みフォームより";
-$mail_body = $honbun1.$honbun2.$honbun3.$honbun4.$honbun5.$honbun6.$honbun7.$honbun8.$honbun9.$honbun10.$honbun11.$honbun12.$honbun13.$honbun14.$honbun15.$honbun16.$honbun17.$honbun18.$honbun19.$honbun20.$honbun21.$honbun22.$honbun23.$honbun24.$honbun25.$honbun26.$honbun27.$honbun28.$honbun29.$honbun30.$honbun31.$honbun32.$honbun33.$honbun34;
+$mail_body = $honbun1.$honbun2.$honbun35.$honbun36.$honbun3.$honbun4.$honbun5.$honbun6.$honbun7.$honbun8.$honbun9.$honbun10.$honbun11.$honbun12.$honbun13.$honbun14.$honbun15.$honbun16.$honbun17.$honbun18.$honbun19.$honbun20.$honbun21.$honbun22.$honbun23.$honbun24.$honbun25.$honbun26.$honbun27.$honbun28.$honbun29.$honbun30.$honbun31.$honbun32.$honbun33.$honbun34;
 $mail_header = "form:".$EMAIL;
 
 $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
@@ -201,8 +209,8 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
             <!-- applicationページに戻る -->
             <div class="btn_area mt_40">
               <p>
-                <a href="#" class="btn btn-outline-danger w-25" onClick="history.go(-2); return false;">申し込みフォームへ</a>
-                <a href="../index.html" class="btn btn-outline-danger w-25">TOPページへ</a>
+                <a href="#" class="btn btn-outline-danger" onClick="history.go(-2); return false;">申し込みフォームへ</a>
+                <a href="../index.html" class="btn btn-outline-danger">TOPページへ</a>
               </p>
             </div>
           </div>
@@ -296,6 +304,10 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
 
   </div>
 
+  <!-- セッション終了 -->
+  <?php
+  unset($_POST['NAME'],$_POST['NAME_KANA'],$_POST['EMAIL'],$_POST['TEL'],$_POST['FAX'],$_POST['MESSAGE']);
+  ?>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -304,11 +316,6 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   <script src="js/index.js"></script>
-
-  <!-- セッション終了 -->
-  <?php
-  unset($_POST['NAME'],$_POST['NAME_KANA'],$_POST['EMAIL'],$_POST['TEL'],$_POST['FAX'],$_POST['MESSAGE']);
-  ?>
 
 </body>
 </html>

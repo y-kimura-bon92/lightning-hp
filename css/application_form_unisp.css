@@ -150,4 +150,14 @@ label {/* inputの見出し */
   }
 }
 
+.btn_area a {
+  width: 25%;
+}
+@media screen and (max-width:768px) {
+  .btn_area a {
+    width: 50%;
+  }
+}
+
+
 

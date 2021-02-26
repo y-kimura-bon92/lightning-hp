@@ -122,6 +122,10 @@
   padding: 2rem 1rem;
 }
 
+input:disabled {
+  border: 2px solid #ccc;
+}
+
 
 /* -----------------------------
       application form
@@ -169,3 +173,11 @@ label {/* inputの見出し */
 }
 
 
+.btn_area a {
+  width: 25%;
+}
+@media screen and (max-width:768px) {
+  .btn_area a {
+    width: 50%;
+  }
+}
