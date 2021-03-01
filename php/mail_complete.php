@@ -37,7 +37,7 @@ $honbun14 = "   {$MESSAGE}\n\n";
 mb_language("japanese");
 mb_internal_encoding("UTF-8");
 
-$mail_to = "mirai1735@icloud.com";
+$mail_to = "info@union-co.jp";
 $mail_subject = "メールフォームより送信されました";
 $mail_body = $honbun1.$honbun2.$honbun3.$honbun4.$honbun5.$honbun6.$honbun7.$honbun8.$honbun9.$honbun10.$honbun11.$honbun12.$honbun13.$honbun14;
 $mail_header = "form:".$EMAIL;
@@ -50,6 +50,8 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="google-site-verification" content="kH5em0acV4kH6CCYLrBiFUE9dnYWA44uITKCA_GBupA" />
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="株式会社UNION,株式会社ユニオン,UNION,ユニオン,ゆにおん">
