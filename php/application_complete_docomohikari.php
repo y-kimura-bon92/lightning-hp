@@ -259,7 +259,8 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
                           <li><a href="service_union_isp.html">UNION ISP</a> - <a href="application_form_unisp.html">申し込み</a></li>
                           <li><a href="service_union_wifi.html">UNION WI-FI</a> - <a href="application_form_uni-wi-fi.html">申し込み</a></li>
                           <li><a href="service_internet.html#analog">アナログ戻し</a> - <a href="application_form_analog.html">申し込み</a></li>
-                          <li><a href="application_form_docomohikari.html">ドコモ光お申し込み</a></li>
+                          <li><a href="hikari_collaboration.html">光コラボレーション比較</a></li>
+                          <!-- <li><a href="application_form_docomohikari.html">ドコモ光お申し込み</a></li> -->
                         </ul>
                       </li>
                       <li><!-- WEBデザイン -->

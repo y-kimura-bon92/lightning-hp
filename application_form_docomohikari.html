@@ -17,7 +17,10 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/application_form_docomohikari.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+  <script src="https://jpostal-1006.appspot.com/jquery.jpostal.js"></script>
 </head>
 
 <body>
@@ -31,7 +34,7 @@
 
         <!-- 左画面メインビジュアル -->
         <div class="jumbotron catch_copy">
-          <h1 class="display-3">APPLICATION<br><span class="">ドコモ光お申し込み<br>（転用）</span></h1>
+          <h1 class="display-3">APPLICATION<br><span class="">インターネットご案内フォーム</span></h1>
         </div>
       </div>
     </div>
@@ -105,85 +108,85 @@
         <!-- お申し込みコンテンツ -->
         <div class="container mt_120 mb_120 sp_mt_80">
           <div class="mb_80">
-            <h2 class="first_letter_design">ドコモ光お申し込み（転用） ―</h2>
+            <h2 class="first_letter_design">インターネットのお引越し、新規お申し込み ―</h2>
           </div>
 
           <!-- 注意書き -->
-          <div class="notes_contact mt_40">
-            <span class="notes_contact_title">事前にご用意いただきたいこと</span>
-            <p>転用のお申込み前に、「転用承諾番号」「ご利用中のプロバイダ」「ご利用中のオプションサービス」をご確認いただき、お客さま確認シートにご記入ください。</p>
+          <!-- <div class="notes_contact mt_40"> -->
+            <!-- <span class="notes_contact_title">事前にご用意いただきたいこと</span> -->
+            <!-- <p>転用のお申込み前に、「転用承諾番号」「ご利用中のプロバイダ」「ご利用中のオプションサービス」をご確認いただき、お客さま確認シートにご記入ください。</p> -->
 
-            <div class="note_num01 mt_80 sp_mt_40">
-              <h4 class="subpage_sub_h4__2">1.転用承諾番号の取得</h4>
-              <hr>
+            <!-- <div class="note_num01 mt_80 sp_mt_40"> -->
+              <!-- <h4 class="subpage_sub_h4__2">1.転用承諾番号の取得</h4> -->
+              <!-- <hr> -->
               <!-- 小見出し -->
-              <h5 class="mt_40 sp_mt_20">◯ 取得前にご準備いただくこと</h5>
-              <p class="mt_20"><img src="img/img_check_02_pc.gif" class="w-100" alt=""></p>
+              <!-- <h5 class="mt_40 sp_mt_20">◯ 取得前にご準備いただくこと</h5> -->
+              <!-- <p class="mt_20"><img src="img/img_check_02_pc.gif" class="w-100" alt=""></p> -->
 
               <!-- ノートリスト -->
-              <ul class="list-notes mt_20">
+              <!-- <ul class="list-notes mt_20">
                 <li class="list-notes__item small">
                   NTT東日本／NTT西日本からの開通のご案内・請求書での確認方法は<a href="https://www.nttdocomo.co.jp/hikari/tenyou/necessary_information.html" target="blank">必要情報の確認方法</a>についてからご確認ください。
                 </li>
-              </ul>
+              </ul> -->
 
               <!-- 小見出し -->
-              <h5 class="mt_40">◯ 転用承諾番号の取得方法</h5>
-              <p class="mt_20">お客さまがご契約中のNTT東日本またはNTT西日本から「転用承諾番号」をWebまたは電話で取得してください。</p>
+              <!-- <h5 class="mt_40">◯ 転用承諾番号の取得方法</h5>
+              <p class="mt_20">お客さまがご契約中のNTT東日本またはNTT西日本から「転用承諾番号」をWebまたは電話で取得してください。</p> -->
 
               <!-- ノートリスト -->
-              <ul class="list-notes mt_20">
+              <!-- <ul class="list-notes mt_20">
                 <li class="list-notes__item small text-danger">
                   「転用承諾番号」と合わせて、「有効期限」および「ご利用中のフレッツ光サービス・オプションサービス・プロバイダ」をご確認ください。
                 </li>
               </ul>
-              <p class="mt_20"><img src="img/img_tenyou_number_pc.gif" class="w-100" alt=""></p>
+              <p class="mt_20"><img src="img/img_tenyou_number_pc.gif" class="w-100" alt=""></p> -->
 
               <!-- ノートリスト -->
-              <ul class="list-notes mt_20">
+              <!-- <ul class="list-notes mt_20">
                 <li class="list-notes__item small">
                   転用承諾番号の有効期間は、取得日を含む15日間です。
                 </li>
                 <li class="list-notes__item small">
                   期限を過ぎた場合、または番号を忘れてしまった場合は再度転用承諾番号払い出しのお申込みが必要になります。
                 </li>
-              </ul>
-            </div>
+              </ul> -->
+            <!-- </div> -->
 
 
-            <div class="note_num02 mt_80 sp_mt_40">
+            <!-- <div class="note_num02 mt_80 sp_mt_40">
               <h4 class="subpage_sub_h4__2">2.プロバイダのご確認</h4>
               <p class="">現在「フレッツ光」でご契約中のプロバイダが「ドコモ光」でもそのままご利用になれます。</p>
               <hr>
               <h5 class="mt_40 sp_mt_20">◯ ご契約中のプロバイダが「ドコモ光」と提携していなかった場合</h5>
-              <p>下記のいずれかの方法をご選択ください。</p>
+              <p>下記のいずれかの方法をご選択ください。</p> -->
 
               <!-- ノートリスト -->
-              <ol class="list-notes_02 mt_20">
+              <!-- <ol class="list-notes_02 mt_20">
                 <li class="list-notes__item_02 small">
                   現在ご契約中のプロバイダを解約していただき、プロバイダがセットになった「タイプA」または「タイプB」をご契約いただく
                 </li>
                 <li class="list-notes__item_02 small">
                   現在ご契約中のプロバイダを引き続きご契約いただき、かつ「ドコモ光単独タイプ」をご契約いただく
                 </li>
-              </ol>
+              </ol> -->
               <!-- ノートリスト -->
-              <ul class="list-notes mt_40">
+              <!-- <ul class="list-notes mt_40">
                 <li class="list-notes__item small">
                   「ドコモ光」の提携プロバイダは「<a href="https://www.nttdocomo.co.jp/hikari/provider_list/" target="blank">ドコモ光のプロバイダ</a>」でご確認ください。
                 </li>
               </ul>
-            </div>
+            </div> -->
 
 
-            <div class="note_num03 mt_80 sp_mt_40">
+            <!-- <div class="note_num03 mt_80 sp_mt_40">
               <h4 class="subpage_sub_h4__2">3.オプションサービスのご確認</h4>
               <p>転用承諾番号取得時に、「フレッツ光」でご利用中のオプションサービスをご確認ください。</p>
               <hr>
               <div class="note_enc_item mt_40 sp_mt_20">
-                <h6 class="text-danger">現在NTT東日本／NTT西日本でご利用中のひかり電話とフレッツ・テレビの契約内容は、原則「ドコモ光電話」「ドコモ光テレビオプション」へ引継ぎます。</h6>
+                <h6 class="text-danger">現在NTT東日本／NTT西日本でご利用中のひかり電話とフレッツ・テレビの契約内容は、原則「ドコモ光電話」「ドコモ光テレビオプション」へ引継ぎます。</h6> -->
                 <!-- ノートリスト -->
-                <ul class="list-notes mt_20">
+                <!-- <ul class="list-notes mt_20">
                   <li class="list-notes__item small text-danger">
                     詳しいサービス内容、注意事項は「<a href="https://www.nttdocomo.co.jp/hikari/tell_service/" target="blank">ドコモ光電話</a>」「<a href="https://www.nttdocomo.co.jp/hikari/tv_option/" target="blank">ドコモ光テレビオプション</a>」をご確認ください。
                   </li>
@@ -193,16 +196,173 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div> -->
 
 
 
           <!-- 申し込みフォーム -->
+          <script>
+            $(function(){
+              //郵便番号
+              /*
+              $('.code').change(function(){
+                var str = $(this).val();
+                str = str.replace( /[Ａ-Ｚａ-ｚ０-９－]/g, function(s) {
+                  return String.fromCharCode(s.charCodeAt(0) - 65248);
+                });
+                str = str.replace( /ー/g, "-" );
+                $(this).val(str);
+              }).change();
+              */
+              $('#postcode1').jpostal({
+                postcode : [
+                  '#postcode1'
+                ],
+                address : {
+                  '#address1'  : '%3',
+                  '#address2'  : '%4 %5'
+                }
+              });
+              $('#postcode2').jpostal({
+                postcode : [
+                  '#postcode2'
+                ],
+                address : {
+                  '#address3'  : '%3',
+                  '#address4'  : '%4 %5'
+                }
+              });
+            });
+          </script>
           <div class="row mt_80">
-            <h4 class="subpage_sub_h4">申し込みフォーム</h4>
+            <h4 class="subpage_sub_h4">ご案内フォーム</h4>
+            <p class="mt_20">当フォームへの入力・送信のみでは、お申込み（ご契約）は完了しておりません。
+              <br>担当者よりお電話にてご連絡させていただきます。メールのみでのご案内はできかねますのでご了承ください。</p>
             <div class="contact-form mt_20">
               <form role="form" method="post" action="php/application_confirm_dokomohikari.php">
                 
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th colspan="3" class="table_title">お引越し情報</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan="3">お引越し元のご住所</th>
+                      <th>郵便番号</th>
+                      <td><input name="postcode1" id="postcode1" type="tel" class="form-control input-lg"  placeholder="例）541-0056"></td>
+                    </tr>
+                    <tr>
+                      <th>都道府県+以降の住所</th>
+                      <td><input id="address1" name="address1_s" type="text" class="form-control input-lg" placeholder="例）大阪府" ></td>
+                    </tr>
+                    <tr>
+                      <th>マンション・建物名</th>
+                      <td>
+                        <input id="address2" name="address2" type="text" class="form-control input-lg" placeholder="大阪市中央区久太郎町3-1-27 船場大西ビル1F" >
+                        <p class="text-danger"><small>※集合住宅の場合は、建物名・お部屋番号をご記入ください。</small></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th rowspan="3"><span class="text-danger">※</span>お引越し先のご住所</th>
+                      <th>郵便番号</th>
+                      <td><input name="postcode1" id="postcode2" type="tel" class="form-control input-lg"  placeholder="例）541-0056"></td>
+                    </tr>
+                    <tr>
+                      <th>都道府県+以降の住所</th>
+                      <td><input id="address3" name="address3_s" type="text" class="form-control input-lg" placeholder="例）大阪府" ></td>
+                    </tr>
+                    <tr>
+                      <th>マンション・建物名</th>
+                      <td>
+                        <input id="address4" name="address4" type="text" class="form-control input-lg" placeholder="大阪市中央区久太郎町3-1-27 船場大西ビル1F" >
+                        <p class="text-danger"><small>※集合住宅の場合は、建物名・お部屋番号をご記入ください。</small></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">お引越し予定時期</th>
+                      <td>
+                        <input type="date" name="move_day" class="form-control input-lg">
+                        <br>
+                        <input type="radio" name="move" id="move_1" value="未定"><label for="move_1">日付未定</label>
+                        <input type="radio" name="move" id="move_2" class="ml_20" value="引越済み"><label for="move_2">引越済み</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2">インターネット<br>ご利用状況</th>
+                      <th>回線名</th>
+                      <td>
+                        <select name="line" class="form-control input-lg">
+                          <option value="フレッツ光">▼フレッツ光</option>
+                          <option value="auひかり">auひかり</option>
+                          <option value="ドコモ光">ドコモ光</option>
+                          <option value="SoftBank光">SoftBank光</option>
+                          <option value="So-Net光">So-Net光</option>
+                          <option value="ビッグローブ光">ビッグローブ光</option>
+                          <option value="CATV">CATV</option>
+                          <option value="ADSL">ADSL</option>
+                          <option value="モバイルWi-Fi">モバイルWi-Fi</option>
+                          <option value="その他">その他</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>プロバイダ</th>
+                      <td><input type="text" name="provider" class="form-control input-lg"></td>
+                    </tr>
+
+                    <thead>
+                      <tr>
+                        <th colspan="3" class="table_title">お客様情報</th>
+                      </tr>
+                    </thead>
+                    <tr class="required-input">
+                      <th><span class="text-danger">※</span>お申込者名</th>
+                      <td colspan="2"><input type="text" name="namae_s" id="namae" size="30" class="form-control input-lg" placeholder="例）通信 太郎" /></td>
+                    </tr>
+                    <tr class="required-input">
+                      <th><span class="text-danger">※</span>携帯電話番号 </th>
+                      <td colspan="2">
+                        <input type="tel" name="tel_s" id="tel" size="30" class="form-control input-lg" placeholder="例）09012345678" pattern="[\d-]*" />
+                        <p class="text-danger"><small>※引越後にもご連絡がとりやすい携帯電話番号をご入力ください。<br> ※ハイフン不要</small></p>
+                        <p class="mt_20">ご利用中の携帯キャリア <small>＊複数選択可</small></p>
+                      <input name="carrer[0]" type="checkbox" id="carrer-docomo" class="form-check-input ml_20" value="ドコモ" /><label for="carrer-docomo">ドコモ</label>
+                      <input name="carrer[1]" type="checkbox" id="carrer-au" class="form-check-input ml_20" value="au" /><label for="carrer-au">au</label>
+                      <input name="carrer[2]" type="checkbox" id="carrer-softbank" class="form-check-input ml_20" value="ソフトバンク" /><label for="carrer-softbank">ソフトバンク</label>
+                      <input name="carrer[3]" type="checkbox" id="carrer-other" class="form-check-input ml_20" value="その他" /><label for="carrer-other">その他</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        メールアドレス
+                      </th>
+                      <td colspan="2">
+                        <input type="email" name="email" id="email" size="30" class="form-control input-lg" placeholder="例）mail@union-net.com" />
+                        <p class="text-danger"><small>※半角英数字にてご入力ください。</small></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>お電話がつながりやすい時間帯</th>
+                      <td colspan="2">
+                        <select name="hope_time" id="hope_time" class="form-control input-lg">
+                          <option value="いつでも（9～21時）">▼いつでも（9～21時）</option>
+                          <option value="9～12時">9～12時</option>
+                          <option value="12～13時">12～13時</option>
+                          <option value="13～17時">13～17時</option>
+                          <option value="17～21時">17～21時</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>その他お問い合わせ内容</th>
+                      <td colspan="2"><textarea name="free" id="free" cols="40" rows="4" class="form-control"></textarea></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+
                 <script>
                   function setDisable(target){
                     $(target).prop("disabled", true);  
@@ -212,7 +372,7 @@
                   }
                 </script>
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="" class="mt_0">お申込内容</label>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="APP_DETALIS" value="新規" id="app_detalis_new" placeholder="新規" onclick="setDisable('#comment1')">
@@ -222,38 +382,38 @@
                     <input class="form-check-input" type="radio" name="APP_DETALIS" value="転用" id="app_detalis_diver" placeholder="転用" onclick="setEnable('#comment1')" checked>
                     <label class="form-check-label mt_0 mb_0" for="app_detalis_diver">転用</label>
                   </div>
-                </div>
+                </div> -->
 
                 <!-- 転用番号 -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="" class="">転用番号</label>
                   <input type="text" class="form-control input-lg" id="comment1" name="TRANSFER_NUMBER" placeholder="W1234-5678-90" maxlength="14">
                   <p class="small text-danger">※ご新規の方は入力不要</p>
-                </div>
+                </div> -->
 
                 <!-- 名前 -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="">お名前</label>
                   <input type="text" class="form-control input-lg" name="NAME" placeholder="ドコモ　太郎">
-                </div>
+                </div> -->
 
                 <!-- 名前（カナ） -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="">お名前（カナ）</label>
                   <input type="text" class="form-control input-lg" name="NAME_KANA" placeholder="ドコモ　タロウ" required>
-                </div>
+                </div> -->
 
                 <!-- 電話番号 -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="">電話番号</label>
                   <input type="tel" class="form-control input-lg" name="TEL" placeholder="0120-123-456" required>
-                </div>
+                </div> -->
 
                 <!-- 生年月日 -->
-                <div class="form-group">
-                  <label for="">生年月日</label>
+                <!-- <div class="form-group">
+                  <label for="">生年月日</label> -->
                   <!-- 年 -->
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col-4 pl_0">
                       <select type="selected" class="form-control input-lg" name="BIRTH_YEAR" value="" placeholder="Select One">
                         <option value="" selected>年▼</option>
@@ -342,9 +502,9 @@
                         <option value="2000">2000</option>
                       </select>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4"> -->
                       <!-- 月  -->
-                      <select type="selected" class="form-control input-lg" name="BIRTH_MONTH" value="" placeholder="Select One">
+                      <!-- <select type="selected" class="form-control input-lg" name="BIRTH_MONTH" value="" placeholder="Select One">
                         <option value="" selected>月▼</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
@@ -360,9 +520,9 @@
                         <option value="12">12</option>
                       </select>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4"> -->
                       <!-- 日  -->
-                      <select type="selected" class="form-control input-lg" name="BIRTH_DAY" value="" placeholder="Select One">
+                      <!-- <select type="selected" class="form-control input-lg" name="BIRTH_DAY" value="" placeholder="Select One">
                         <option value="" selected>日▼</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
@@ -398,10 +558,10 @@
                       </select>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 
                 <!-- 性別 -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="">性別</label>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="GENDER" value="男性" id="gender_man" placeholder="男性">
@@ -411,23 +571,23 @@
                     <input class="form-check-input" type="radio" name="GENDER" value="女性" id="gender_woman" placeholder="女性">
                     <label class="form-check-label mt_0 mb_0" for="gender_woman">女性</label>
                   </div>
-                </div>
+                </div> -->
 
                 <!-- 住所 -->
-                <div class="form-group">
-                  <label for="">郵便番号</label>
+                <!-- <div class="form-group">
+                  <label for="">郵便番号</label> -->
                   <!-- ▼郵便番号入力フィールド(7桁) -->
-                  <input type="text" class="form-control input-lg" name="zip11" value="" placeholder="541-0056" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
+                  <!-- <input type="text" class="form-control input-lg" name="zip11" value="" placeholder="541-0056" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
             
-                  <label for="">住所</label>
+                  <label for="">住所</label> -->
                   <!-- ▼住所入力フィールド(都道府県+以降の住所) -->
-                  <input type="text" class="form-control input-lg" name="addr11" value="" placeholder="大阪府大阪市中央区久太郎町3-1-27" >
+                  <!-- <input type="text" class="form-control input-lg" name="addr11" value="" placeholder="大阪府大阪市中央区久太郎町3-1-27" >
                   <label for="">マンション・建物名</label>
                   <input type="text" class="form-control input-lg" name="bild11" value="" placeholder="船場大西ビル">
-                </div>
+                </div> -->
                 
                 <!-- プラン名 -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="">プラン名</label>
                   <select type="selected" class="form-control" name="PLAN" value="" placeholder="Select One">
                     <option value="" selected>選択して下さい▼</option>
@@ -465,36 +625,36 @@
                     <option value="その他コラボ回線">その他コラボ回線</option>
                     <option value="j-comなどケーブル回線">j-comなどケーブル回線</option>
                   </select>
-                </div>
+                </div> -->
 
                 <!-- オプション -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="">オプション</label>
                   <select type="selected" class="form-control" name="OPTION" value="" placeholder="Select One">
                     <option value="" selected>選択して下さい▼</option>
                     <option value="フレッツ光 (ファミリー)">フレッツ光 (ファミリー)</option>
                     <option value="Bフレッツ (ファミリー) (※5)	-	フレッツ 光ネクスト ギガファミリー・スマートタイプ">Bフレッツ (ファミリー) (※5)	-	フレッツ 光ネクスト ギガファミリー・スマートタイプ</option>
                   </select>
-                </div>
+                </div> -->
 
                 <!-- 既存ISP -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="">既存ISP</label>
                   <input type="text" class="form-control input-lg" name="ISP" placeholder="ISP" required>
-                </div>
+                </div> -->
 
                 <!-- 工事費 -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="">工事費</label>
                   <select type="selected" class="form-control" name="CONSTRUCTION_COST" value="" placeholder="Select One">
                     <option value="" selected>選択して下さい▼</option>
                     <option value="あり">あり</option>
                     <option value="なし">なし</option>
                   </select>
-                </div>
+                </div> -->
 
                 <!-- 確認電話 -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="">確認電話</label>
                   <select type="selected" class="form-control" name="CONFIRM_CALL" value="" placeholder="Select One">
                     <option value="" selected>選択して下さい▼</option>
@@ -503,23 +663,23 @@
                     <option value="15-17">15-17</option>
                     <option value="17時以降">17時以降</option>
                   </select>
-                </div>
+                </div> -->
 
                 <!-- 工事希望日 -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="">工事希望日</label>
                   <input type="date" class="form-control input-lg" name="CONST_DATE"/>
                   <p class="text-danger small">※カレンダーアイコンをクリックして選択して下さい</p>
-                </div>
+                </div> -->
 
                 <!-- 備考 -->
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="">備考</label>
                   <textarea type="text" class="form-control" name="REMARKS" id=""></textarea>
-                </div>
+                </div> -->
 
                 <!-- 確認ボタン -->
-                <button type="submit" class="btn btn-blank btn-default bounceInRight w-100 mt_80">確認画面へ</button>
+                <button type="submit" class="btn btn-blank btn-default bounceInRight w-100 mt_40">確認画面へ</button>
               </form>
             </div>
           </div>
@@ -565,7 +725,8 @@
                           <li><a href="service_union_isp.html">UNION ISP</a> - <a href="application_form_unisp.html">申し込み</a></li>
                           <li><a href="service_union_wifi.html">UNION WI-FI</a> - <a href="application_form_uni-wi-fi.html">申し込み</a></li>
                           <li><a href="service_internet.html#analog">アナログ戻し</a> - <a href="application_form_analog.html">申し込み</a></li>
-                          <li><a href="application_form_docomohikari.html">ドコモ光お申し込み</a></li>
+                          <li><a href="hikari_collaboration.html">光コラボレーション比較</a></li>
+                          <!-- <li><a href="application_form_docomohikari.html">ドコモ光お申し込み</a></li> -->
                         </ul>
                       </li>
                       <li><!-- WEBデザイン -->
@@ -619,6 +780,7 @@
   <script src="js/index.js"></script>
   <!-- 郵便番号検索 ajaxzip3 js fail-->
   <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  <script src="js/jquery.jpostal.js"></script>
 
 </body>
 </html>
