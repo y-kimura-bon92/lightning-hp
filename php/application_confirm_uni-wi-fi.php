@@ -279,7 +279,7 @@ $CARDSEC     = $_POST["CARDSEC"];     //セキュリティコード
                 <p>サイトマップ</p>
                 <ul class="outside_list">
                   <li><a href="index.html">top</a></li>
-                  <li><a href="company.html">代表メッセージ</a></li>
+                  <li><a href="philosophy.html">代表メッセージ</a></li>
                   <li>事業内容
                     <ul class="inside_list">
                       <li><!-- 通信事業 -->
@@ -287,7 +287,7 @@ $CARDSEC     = $_POST["CARDSEC"];     //セキュリティコード
                         <ul style="text-indent: 1em;">
                           <li><a href="service_union_isp.html">UNION ISP</a> - <a href="application_form_unisp.html">申し込み</a></li>
                           <li><a href="service_union_wifi.html">UNION WI-FI</a> - <a href="application_form_uni-wi-fi.html">申し込み</a></li>
-                          <li><a href="service_internet.html#analog">アナログ戻し</a> - <a href="application_form_analog.html">申し込み</a></li>
+                          <li><a href="service_analog.html">アナログ戻し</a> - <a href="application_form_analog.html">申し込み</a></li>
                           <li><a href="hikari_collaboration.html">光コラボレーション比較</a></li>
                           <!-- <li><a href="application_form_docomohikari.html">ドコモ光お申し込み</a></li> -->
                         </ul>
