@@ -126,7 +126,7 @@
             <div class="col-lg-5">
               <h4 class="flow_title">1. 面接・面談</h4>
               <div class="flow_content">
-                <p class="mb_0"><img src="img/work_flow_01.jpg" class="w-100" alt=""></p>
+                <p class="mb_0"><img class="w-100 lazy" alt="" data-original="img/work_flow_01.jpg"></p>
                 <p class="small flow_text_area">弊社面接担当者との面接・⾯談が⾏われます。<br>お仕事の内容に関する詳細情報などの相互確認が⾏われます。</p>
               </div>
             </div>
@@ -134,7 +134,7 @@
             <div class="col-lg-5 sp_mt_40">
               <h4 class="flow_title">2. 採用</h4>
               <div class="flow_content">
-                <p class="mb_0"><img src="img/work_flow_02.jpg" class="w-100" alt=""></p>
+                <p class="mb_0"><img class="w-100 lazy" alt="" data-original="img/work_flow_02.jpg"></p>
                 <p class="small flow_text_area">面接の結果を連絡させていただきます。<br>採用の場合は勤務開始日、勤務内容等の詳細をお伝えさせていただきます。</p>
               </div>
             </div>
@@ -145,7 +145,7 @@
             <div class="col-lg-5">
               <h4 class="flow_title">3. 部署決定</h4>
               <div class="flow_content">
-                <p class="mb_0"><img src="img/work_flow_03.jpg" class="w-100" alt=""></p>
+                <p class="mb_0"><img class="w-100 lazy" alt="" data-original="img/work_flow_03.jpg"></p>
                 <p class="small flow_text_area">部署が確定致しますと、実際の業務に必要な知識⾯での教育等の事前研修が⾏われます。<br>その上で、勤務開始していただくこととなります。</p>
               </div>
             </div>
@@ -153,7 +153,7 @@
             <div class="col-lg-5 sp_mt_40">
               <h4 class="flow_title">4. 勤務開始</h4>
               <div class="flow_content">
-                <p class="mb_0"><img src="img/work_flow_04.jpg" class="w-100" alt=""></p>
+                <p class="mb_0"><img class="w-100 lazy" alt="" data-original="img/work_flow_04.jpg"></p>
                 <p class="small flow_text_area">実際に勤務して頂く部署での業務がスタートです。<br>皆様のお仕事をしっかりとサポートしていきますので、わからないことや困っていることがあればまずはご相談下さい。</p>
               </div>
             </div>
@@ -175,7 +175,7 @@
                 <p class="mb_0"><img src="img/about-list-icon.png" alt="" class="about_list">&nbsp; 定期的に従業員同士の楽しい交流会を開催</p>
               </div>
               <div class="about_img_content col-10 col-lg-7">
-                <p><img src="img/recruit_07.jpg" alt="" class="w-100"></p>
+                <p><img class="w-100 lazy" alt="" data-original="img/recruit_07.jpg"></p>
               </div>
             </div>
             <div class="detail_comment mt_40">
@@ -204,7 +204,7 @@
                 <p></p>
               </div>
               <div class="about_img_content col-10 col-lg-7">
-                <p><img src="img/recruit_05.jpg" alt="" class="w-100"></p>
+                <p><img class="w-100 lazy" alt="" data-original="img/recruit_05.jpg"></p>
               </div>
             </div>
             <div class="detail_comment notes mt_40">
@@ -241,7 +241,7 @@
                 <p></p>
               </div>
               <div class="about_img_content col-10 col-lg-7">
-                <p><img src="img/recruit_04.jpg" alt="" class="w-100"></p>
+                <p><img class="w-100 lazy" alt="" data-original="img/recruit_04.jpg"></p>
               </div>
             </div>
           </div>
@@ -345,6 +345,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   <script src="js/index.js"></script>
+  <!-- lozad.jsの読み込み -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+  <script>
+    $(function($){
+      $("img.lazy").lazyload();
+    });
+  </script>
 
 </body>
 </html>
