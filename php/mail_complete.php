@@ -37,7 +37,8 @@ $honbun14 = "   {$MESSAGE}\n\n";
 mb_language("japanese");
 mb_internal_encoding("UTF-8");
 
-$mail_to = "info@union-co.jp";
+// $mail_to = "info@union-co.jp";
+$mail_to = "mirai1735@icloud.com";
 $mail_subject = "メールフォームより送信されました";
 $mail_body = $honbun1.$honbun2.$honbun3.$honbun4.$honbun5.$honbun6.$honbun7.$honbun8.$honbun9.$honbun10.$honbun11.$honbun12.$honbun13.$honbun14;
 $mail_header = "form:".$EMAIL;

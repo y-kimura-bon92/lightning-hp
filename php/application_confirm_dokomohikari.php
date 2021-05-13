@@ -2,68 +2,49 @@
 session_start();
 
 // セッションにデータをセット
-if (isset (
-  $_POST['APP_DETALIS'],
-  $_POST['TRANSFER_NUMBER'],
-  $_POST['NAME'],
-  $_POST['NAME_KANA'],
-  $_POST['TEL'],
-  $_POST['BIRTH_YEAR'],
-  $_POST['BIRTH_MONTH'],
-  $_POST['BIRTH_DAY'],
-  $_POST['GENDER'],
-  $_POST['zip11'],
-  $_POST['addr11'],
-  $_POST['bild11'],
-  $_POST['PLAN'],
-  $_POST['OPTION'],
-  $_POST['ISP'],
-  $_POST['CONSTRUCTION_COST'],
-  $_POST['CONFIRM_CALL'],
-  $_POST['CONST_DATE'],
-  $_POST['REMARKS']
-)) {
-  $_SESSION['APP_DETALIS']       = $_POST['APP_DETALIS'];
-  $_SESSION['TRANSFER_NUMBER']   = $_POST['TRANSFER_NUMBER'];
-  $_SESSION['NAME']              = $_POST['NAME'];
-  $_SESSION['NAME_KANA']         = $_POST['NAME_KANA'];
-  $_SESSION['TEL']               = $_POST['TEL'];
-  $_SESSION['BIRTH_YEAR']        = $_POST['BIRTH_YEAR'];
-  $_SESSION['BIRTH_MONTH']       = $_POST['BIRTH_MONTH'];
-  $_SESSION['BIRTH_DAY']         = $_POST['BIRTH_DAY'];
-  $_SESSION['GENDER']            = $_POST['GENDER'];
-  $_SESSION['zip11']             = $_POST['zip11'];
-  $_SESSION['addr11']            = $_POST['addr11'];
-  $_SESSION['bild11']            = $_POST['bild11'];
-  $_SESSION['PLAN']              = $_POST['PLAN'];
-  $_SESSION['OPTION']            = $_POST['OPTION'];
-  $_SESSION['ISP']               = $_POST['ISP'];
-  $_SESSION['CONSTRUCTION_COST'] = $_POST['CONSTRUCTION_COST'];
-  $_SESSION['CONFIRM_CALL']      = $_POST['CONFIRM_CALL'];
-  $_SESSION['CONST_DATE']        = $_POST['CONST_DATE'];
-  $_SESSION['REMARKS']           = $_POST['REMARKS'];
-}
+  $_SESSION['namae_s']              = $_POST['namae_s'];
+  $_SESSION['namae_sk']             = $_POST['namae_sk'];
+  $_SESSION['tel_s']                = $_POST['tel_s'];
+  $_SESSION['origin_postcode']      = $_POST['origin_postcode'];
+  $_SESSION['origin_address']       = $_POST['origin_address'];
+  $_SESSION['origin_address_2']     = $_POST['origin_address_2'];
+  $_SESSION['destination_postcode'] = $_POST['destination_postcode'];
+  $_SESSION['destination_address']  = $_POST['destination_address'];
+  $_SESSION['destination_address2'] = $_POST['destination_address2'];
+  $_SESSION['move_day']             = $_POST['move_day'];
+  $_SESSION['move']                 = $_POST['move'];
+  $_SESSION['line']                 = $_POST['line'];
+  $_SESSION['provider']             = $_POST['provider'];
+  $_SESSION['carrer[0]']            = $_POST['carrer[0]'];
+  $_SESSION['carrer[1]']            = $_POST['carrer[1]'];
+  $_SESSION['carrer[2]']            = $_POST['carrer[2]'];
+  $_SESSION['carrer[3]']            = $_POST['carrer[3]'];
+  $_SESSION['email']                = $_POST['email'];
+  $_SESSION['hope_time']            = $_POST['hope_time'];
+  $_SESSION['free']                 = $_POST['free'];
 
   // 変数にPOSTデータを代入
-  $APP_DETALIS       = $_POST['APP_DETALIS'];       //申し込み内容（新規／転用）
-  $TRANSFER_NUMBER   = $_POST['TRANSFER_NUMBER'];   //転用番号
-  $NAME              = $_POST['NAME'];              //名前
-  $NAME_KANA         = $_POST['NAME_KANA'];         //名前（カナ）
-  $TEL               = $_POST['TEL'];               //電話番号
-  $BIRTH_YEAR        = $_POST['BIRTH_YEAR'];        //生年月日（年）
-  $BIRTH_MONTH       = $_POST['BIRTH_MONTH'];       //生年月日（月）
-  $BIRTH_DAY         = $_POST['BIRTH_DAY'];         //生年月日（日）
-  $GENDER            = $_POST['GENDER'];            //性別
-  $zip11             = $_POST['zip11'];             //郵便番号
-  $addr11            = $_POST['addr11'];            //住所
-  $bild11            = $_POST['bild11'];            //マンション・建物名
-  $PLAN              = $_POST['PLAN'];              //プラン名
-  $OPTION            = $_POST['OPTION'];            //オプション
-  $ISP               = $_POST['ISP'];               //既存ISP
-  $CONSTRUCTION_COST = $_POST['CONSTRUCTION_COST']; //工事費
-  $CONFIRM_CALL      = $_POST['CONFIRM_CALL'];      //確認電話
-  $CONST_DATE        = $_POST['CONST_DATE'];        //工事希望日
-  $REMARKS           = $_POST['REMARKS'];           //備考
+
+  $origin_postcode      = $_POST['origin_postcode'];      //お引越し元のご住所（郵便番号）
+  $origin_address       = $_POST['origin_address'];       //お引越し元のご住所（都道府県+以降の住所）
+  $origin_address_2     = $_POST['origin_address_2'];     //お引越し元のご住所（マンション・建物名）
+  $destination_postcode = $_POST['destination_postcode']; //お引越し先のご住所（郵便番号）
+  $destination_address  = $_POST['destination_address'];  //お引越し先のご住所（都道府県+以降の住所）
+  $destination_address2 = $_POST['destination_address2']; //お引越し先のご住所（マンション・建物名）
+  $move_day             = $_POST['move_day'];             //お引越し予定時期
+  $move                 = $_POST['move'];                 //お引越し予定（未定・済）
+  $line                 = $_POST['line'];                 //インターネット回線名
+  $provider             = $_POST['provider'];             //プロバイダ
+  $namae_s              = $_POST['namae_s'];              //お申込者名
+  $namae_sk             = $_POST['namae_sk'];             //お申込者名（カナ）
+  $tel_s                = $_POST['tel_s'];                //携帯電話番号
+  $carrer[0]            = $_POST['carrer[0]'];            //携帯キャリア[ドコモ]
+  $carrer[1]            = $_POST['carrer[1]'];            //携帯キャリア[au]
+  $carrer[2]            = $_POST['carrer[2]'];            //携帯キャリア[ソフトバンク]
+  $carrer[3]            = $_POST['carrer[3]'];            //携帯キャリア[その他]
+  $email                = $_POST['email'];                //メールアドレス
+  $hope_time            = $_POST['hope_time'];            //お電話がつながりやすい時間帯
+  $free                 = $_POST['free'];                 //その他お問い合わせ
 
 ?>
 
@@ -83,9 +64,9 @@ if (isset (
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/setting.css">
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/application_form_unisp.css">
+  <link rel="stylesheet" href="https://union-co.jp/css/setting.css">
+  <link rel="stylesheet" href="https://union-co.jp/css/common.css">
+  <link rel="stylesheet" href="https://union-co.jp/css/application_form_unisp.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
 </head>
 
@@ -100,7 +81,7 @@ if (isset (
 
         <!-- 左画面メインビジュアル -->
         <div class="jumbotron catch_copy">
-          <h1 class="display-3">APPLICATION<br><span class="">ドコモ光（転用）お申し込み<br>（確認画面）</span></h1>
+          <h1 class="display-3">APPLICATION<br><span class="">インターネットご案内フォーム<br>（確認画面）</span></h1>
         </div>
       </div>
     </div>
@@ -120,7 +101,7 @@ if (isset (
 
             <!-- ヘッダーロゴ -->
             <div class="header_logo sp_pt_20">
-              <h2><a href="index.html"><img src="../img/logoBK.png" alt=""></a></h2>
+              <h2><a href="https://union-co.jp"><img src="https://union-co.jp/img/logoBK.png" alt=""></a></h2>
             </div>
 
             <!-- ヘッダーメニュー -->
@@ -128,18 +109,18 @@ if (isset (
 
               <!-- pc menu -->
               <ul class="gnav justify-content-end">
-                <li><a href="philosophy.html">MESSAGE</a></li>
+                <li><a href="https://union-co.jp/philosophy.html">MESSAGE</a></li>
                 <li>
                   <a>SERVICE</a>
                   <ul class="dropdown_menu_pc">
-                    <li><a href="service_internet.html">通信事業</a></li>
-                    <li><a href="service_webdesign.html">Webデザイン</a></li>
-                    <li><a href="service_other.html">その他の事業</a></li>
+                    <li><a href="https://union-co.jp/service_internet.html">通信事業</a></li>
+                    <li><a href="https://union-co.jp/service_webdesign.html">Webデザイン</a></li>
+                    <li><a href="https://union-co.jp/service_other.html">その他の事業</a></li>
                   </ul>
                 </li>
-                <li><a href="recruit.html">RECRUIT</a></li>
-                <li><a href="company.html">COMPANY</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="https://union-co.jp/recruit.html">RECRUIT</a></li>
+                <li><a href="https://union-co.jp/company.html">COMPANY</a></li>
+                <li><a href="https://union-co.jp/contact.html">CONTACT</a></li>
               </ul>
 
               <!-- sp menu -->
@@ -154,14 +135,14 @@ if (isset (
                 </button>
                 <div class="collapse navbar-collapse" id="navmenu1">
                   <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="index.html">TOP</a>
-                    <a class="nav-item nav-link" href="philosophy.html">MESSAGE</a>
-                    <a class="nav-item nav-link" href="service_internet.html">通信事業</a>
-                    <a class="nav-item nav-link" href="service_webdesign.html">Webデザイン</a>
-                    <a class="nav-item nav-link" href="service_other.html">その他の事業</a>
-                    <a class="nav-item nav-link" href="recruit.html">RECRUIT</a>
-                    <a class="nav-item nav-link" href="company.html">COMPANY</a>
-                    <a class="nav-item nav-link" href="contact.html">CONTACT</a>
+                    <a class="nav-item nav-link" href="https://union-co.jp/index.html">TOP</a>
+                    <a class="nav-item nav-link" href="https://union-co.jp/philosophy.html">MESSAGE</a>
+                    <a class="nav-item nav-link" href="https://union-co.jp/service_internet.html">通信事業</a>
+                    <a class="nav-item nav-link" href="https://union-co.jp/service_webdesign.html">Webデザイン</a>
+                    <a class="nav-item nav-link" href="https://union-co.jp/service_other.html">その他の事業</a>
+                    <a class="nav-item nav-link" href="https://union-co.jp/recruit.html">RECRUIT</a>
+                    <a class="nav-item nav-link" href="https://union-co.jp/company.html">COMPANY</a>
+                    <a class="nav-item nav-link" href="https://union-co.jp/contact.html">CONTACT</a>
                   </div>
                 </div>
               </nav>
@@ -182,80 +163,74 @@ if (isset (
             <form action="application_complete_docomohikari.php" method="post">
               <table class="table">
                 <tr class="row">
-                  <th class="col-4">申し込み内容（新規／転用）</th>
+                  <th class="col-4">お引越し元のご住所</th>
                   <td class="col-8">
-                    <?php echo $_POST["APP_DETALIS"]; ?>
+                    〒<?php echo $_POST["origin_postcode"]; ?>
+                    <br>
+                    <?php echo $_POST["origin_address"]; ?>
+                    <br>
+                    <?php echo $_POST["origin_address_2"]; ?>
                   </td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">転用番号</th>
-                  <td class="col-8"><?php echo $_POST["TRANSFER_NUMBER"]; ?></td>
+                  <th class="col-4">お引越し先のご住所</th>
+                  <td class="col-8">
+                    〒<?php echo $_POST["destination_postcode"]; ?>
+                    <br>
+                    <?php echo $_POST["destination_address"]; ?>
+                    <br>
+                    <?php echo $_POST["destination_address2"]; ?>
+                  </td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">お名前</th>
-                  <td class="col-8"><?php echo $_POST["NAME"]; ?></td>
+                  <th class="col-4">お引越し予定時期</th>
+                  <td class="col-8"><?php echo $_POST["move_day"]; ?></td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">お名前（カナ）</th>
-                  <td class="col-8"><?php echo $_POST["NAME_KANA"]; ?></td>
+                  <th class="col-4">お引越し予定</th>
+                  <td class="col-8"><?php echo $_POST["move"]; ?></td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">電話番号</th>
-                  <td class="col-8"><?php echo $_POST["TEL"]; ?></td>
+                  <th class="col-4">インターネット回線名</th>
+                  <td class="col-8"><?php echo $_POST["line"]; ?></td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">生年月日</th>
-                  <td class="col-8"><?php echo $_POST["BIRTH_YEAR"]; ?>年<?php echo $_POST["BIRTH_MONTH"]; ?>月<?php echo $_POST["BIRTH_DAY"]; ?>日</td>
+                  <th class="col-4">プロバイダ</th>
+                  <td class="col-8"><?php echo $_POST["provider"]; ?></td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">性別</th>
-                  <td class="col-8"><?php echo $_POST["GENDER"]; ?></td>
+                  <th class="col-4">お申込者名</th>
+                  <td class="col-8"><?php echo $_POST["namae_s"]; ?></td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">郵便番号</th>
-                  <td class="col-8"><?php echo $_POST["zip11"]; ?></td>
+                  <th class="col-4">お申込者名（カナ）</th>
+                  <td class="col-8"><?php echo $_POST["namae_sk"]; ?></td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">住所</th>
-                  <td class="col-8"><?php echo $_POST["addr11"]; ?></td>
+                  <th class="col-4">携帯電話番号</th>
+                  <td class="col-8"><?php echo $_POST["tel_s"]; ?></td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">マンション・建物名</th>
-                  <td class="col-8"><?php echo $_POST["bild11"]; ?></td>
+                  <th class="col-4">携帯キャリア</th>
+                  <td class="col-8"><?php echo $_POST["carrer"]; ?></td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">プラン名</th>
-                  <td class="col-8"><?php echo $_POST["PLAN"]; ?></td>
+                  <th class="col-4">メールアドレス</th>
+                  <td class="col-8"><?php echo $_POST["email"]; ?></td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">オプション</th>
-                  <td class="col-8"><?php echo $_POST["OPTION"]; ?></td>
+                  <th class="col-4">お電話がつながりやすい時間帯</th>
+                  <td class="col-8"><?php echo $_POST["hope_time"]; ?></td>
                 </tr>
                 <tr class="row">
-                  <th class="col-4">既存ISP</th>
-                  <td class="col-8"><?php echo $_POST["ISP"]; ?></td>
-                </tr>
-                <tr class="row">
-                  <th class="col-4">工事費</th>
-                  <td class="col-8"><?php echo $_POST["CONSTRUCTION_COST"]; ?></td>
-                </tr>
-                <tr class="row">
-                  <th class="col-4">確認電話</th>
-                  <td class="col-8"><?php echo $_POST["CONFIRM_CALL"]; ?></td>
-                </tr>
-                <tr class="row">
-                  <th class="col-4">工事希望日</th>
-                  <td class="col-8"><?php echo $_POST["CONST_DATE"]; ?></td>
-                </tr>
-                <tr class="row">
-                  <th class="col-4">備考</th>
-                  <td class="col-8"><?php echo $_POST["REMARKS"]; ?></td>
+                  <th class="col-4">その他お問い合わせ</th>
+                  <td class="col-8"><?php echo $_POST["free"]; ?></td>
                 </tr>
               </table>
 
               <div class="btn_area mt_40">
                 <!-- 戻るボタン -->
-                <a type="button" href="#" onClick="history.back(); return false;" class="btn btn-outline-danger" style="border-width: 1px;">戻る</a>
+                <a type="button" href="#!" onClick="history.back(); return false;" class="btn btn-outline-danger" style="border-width: 1px;">戻る</a>
                 <!-- 送信ボタン -->
                 <input style="border-width: 1px;" type="submit" value="申込みを確定する" class="btn btn-blank btn-default bounceInRight">
               </div>
@@ -271,7 +246,11 @@ if (isset (
         <footer>
           <div class="footer_content container pt_40 pb_40">
             <!-- フッターロゴ -->
-            <h2 class="pb_40"><a href="index.html"><img class="footer_logo" src="../img/logoBKWH.png" alt=""></a></h2>
+            <h2 class="pb_40">
+              <a href="https://union-co.jp/">
+                <img class="footer_logo" src="https://union-co.jp/img/logoBKWH.png" alt="">
+              </a>
+            </h2>
 
             <div class="row">
               <!-- フッター企業概要 -->
@@ -286,57 +265,68 @@ if (isset (
               <div class="col-lg-4 footer_center_content sp_mt_40 sp_pb_40">
                 <p class="mb_20">お問い合わせ</p>
                 <p>ご不明点など、お気軽にお問い合わせ下さい。</p>
-                <p class="footer_content_btn text-center"><a href="contact.html" class="d-inline-block">メールフォーム</a></p>
+                <p class="footer_content_btn text-center"><a href="https://union-co.jp/contact.html" class="d-inline-block">メールフォーム</a></p>
               </div>
 
               <!-- フッターサイトマップ -->
               <div class="col-lg-4 footer_right_content sp_mt_40">
                 <p>サイトマップ</p>
                 <ul class="outside_list">
-                  <li><a href="index.html">top</a></li>
-                  <li><a href="philosophy.html">代表メッセージ</a></li>
+                  <li><a href="https://union-co.jp/">top</a></li>
+                  <li><a href="https://union-co.jp/philosophy.html">代表メッセージ</a></li>
                   <li>事業内容
                     <ul class="inside_list">
                       <li><!-- 通信事業 -->
-                        <a href="service_internet.html">通信事業</a>
+                        <a href="https://union-co.jp/service_internet.html">通信事業</a>
                         <ul style="text-indent: 1em;">
-                          <li><a href="service_union_isp.html">UNION ISP</a> - <a href="application_form_unisp.html">申し込み</a></li>
-                          <li><a href="service_union_wifi.html">UNION WI-FI</a> - <a href="application_form_uni-wi-fi.html">申し込み</a></li>
-                          <li><a href="service_analog.html">アナログ戻し</a> - <a href="application_form_analog.html">申し込み</a></li>
-                          <li><a href="hikari_collaboration.html">光コラボレーション比較</a></li>
-                          <!-- <li><a href="application_form_docomohikari.html">ドコモ光お申し込み</a></li> -->
+                          <li>
+                            <a href="https://union-co.jp/service_union_isp.html">UNION ISP</a> - 
+                            <a href="https://union-co.jp/application_form_unisp.html">申し込み</a>
+                          </li>
+                          <li>
+                            <a href="https://union-co.jp/service_union_wifi.html">UNION WI-FI</a> - 
+                            <a href="https://union-co.jp/application_form_uni-wi-fi.html">申し込み</a>
+                          </li>
+                          <li>
+                            <a href="https://union-co.jp/service_analog.html">アナログ戻し</a> - 
+                            <a href="https://union-co.jp/application_form_analog.html">申し込み</a>
+                          </li>
+                          <li>
+                            <a href="https://union-co.jp/hikari_collaboration.html">光コラボレーション比較</a>
+                          </li>
                         </ul>
                       </li>
                       <li><!-- WEBデザイン -->
-                        <a href="service_webdesign.html">WEBデザイン</a>
+                        <a href="https://union-co.jp/service_webdesign.html">WEBデザイン</a>
                       </li>
                       <li><!-- その他事業 -->
-                        <a href="service_other.html">その他事業</a>
+                        <a href="https://union-co.jp/service_other.html">その他事業</a>
                         <ul style="text-indent: 1em;">
-                          <li><a href="service_other.html#iphone_repear">iphone修理</a></li>
-                          <li><a href="service_other.html#curedit">クレカ保証</a> - <a href="application_form_credit.html">申し込み</a></li>
-                          <li><a href="service_other.html#mutual">共済</a></li>
+                          <li>
+                            <a href="https://union-co.jp/service_other.html#iphone_repear">iphone修理</a>
+                          </li>
+                          <li>
+                            <a href="https://union-co.jp/service_other.html#curedit">クレカ保証</a> - 
+                            <a href="https://union-co.jp/application_form_credit.html">申し込み</a>
+                          </li>
+                          <li>
+                            <a href="https://union-co.jp/service_other.html#mutual">共済</a>
+                          </li>
                         </ul>
                       </li>
                     </ul>
                   </li>
-                  <li><a href="company.html">企業内容・アクセス</a></li>
-                  <li><a href="contact.html">お問い合わせ</a></li>
+                  <li>
+                    <a href="https://union-co.jp/company.html">企業内容・アクセス</a>
+                  </li>
+                  <li>
+                    <a href="https://union-co.jp/contact.html">お問い合わせ</a>
+                  </li>
                 </ul>
               </div>
 
             </div>
           </div>
-
-          <!-- フッターメニュー -->
-          <!-- <div class="footer_menu container">
-            <ul class="text-center">
-              <li class="d-inline-block"><a href="philosophy.html">MESSAGE</a></li>
-              <li class="d-inline-block"><a href="service.html">SERVICE</a></li>
-              <li class="d-inline-block"><a href="recruit.html">RECRUIT</a></li>
-              <li class="d-inline-block"><a href="company.html">COMPANY</a></li>
-            </ul>
-          </div> -->
 
           <!-- コピーライト -->
           <div class="footer_copy_light container">
@@ -353,7 +343,7 @@ if (isset (
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="https://union-co.jp/js/index.js"></script>
 
 </body>
 </html>
