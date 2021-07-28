@@ -242,3 +242,20 @@ input[name="tab_item"] {
     flex-wrap: wrap !important;
   }
 }
+
+
+/* -----------------------------
+      申し込みコンテンツ
+--------------------------------- */
+.application_area {
+  border: 3px solid #0e192d;
+  border-radius: 5px;
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.1);
+}
+@media screen and (max-width:768px) {
+  .application_area {
+    padding: 20px 10px;
+  }
+}

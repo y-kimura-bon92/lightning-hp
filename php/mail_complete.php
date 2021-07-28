@@ -37,8 +37,7 @@ $honbun14 = "   {$MESSAGE}\n\n";
 mb_language("japanese");
 mb_internal_encoding("UTF-8");
 
-// $mail_to = "info@union-co.jp";
-$mail_to = "mirai1735@icloud.com";
+$mail_to = "info@union-co.jp";
 $mail_subject = "メールフォームより送信されました";
 $mail_body = $honbun1.$honbun2.$honbun3.$honbun4.$honbun5.$honbun6.$honbun7.$honbun8.$honbun9.$honbun10.$honbun11.$honbun12.$honbun13.$honbun14;
 $mail_header = "form:".$EMAIL;
@@ -51,7 +50,6 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="google-site-verification" content="kH5em0acV4kH6CCYLrBiFUE9dnYWA44uITKCA_GBupA" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,6 +117,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
                 <li><a href="recruit.html">RECRUIT</a></li>
                 <li><a href="company.html">COMPANY</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="https://kachibon.work/lightning/hikari_collaboration.html" style="color: #840204;">APPLICATION</a></li>
               </ul>
 
               <!-- sp menu -->
@@ -141,6 +140,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
                     <a class="nav-item nav-link" href="recruit.html">RECRUIT</a>
                     <a class="nav-item nav-link" href="company.html">COMPANY</a>
                     <a class="nav-item nav-link" href="contact.html">CONTACT</a>
+                    <a class="nav-item nav-link" href="https://kachibon.work/lightning/hikari_collaboration.html" style="color: #840204;">APPLICATION</a>
                   </div>
                 </div>
               </nav>
@@ -200,7 +200,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
               <div class="col-lg-4 footer_left_content sp_pb_40">
                 <p>株式会社UNION</p>
                 <p>〒541-0056 大阪府大阪市中央区久太郎町3丁目1-27 <br>船場大西ビル1階</p>
-                <p>TEL：050-3176-1156</p>
+                <p>TEL：050-3152-9680</p>
                 <p class="sp_mb_0">事業内容：通信事業、webデザイン事業、海外事業、コンテンツ事業、不動産事業、アパレル事業</p>
               </div>
 
@@ -225,7 +225,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
                           <li><a href="service_union_isp.html">UNION ISP</a> - <a href="application_form_unisp.html">申し込み</a></li>
                           <li><a href="service_union_wifi.html">UNION WI-FI</a> - <a href="application_form_uni-wi-fi.html">申し込み</a></li>
                           <li><a href="service_analog.html">アナログ戻し</a> - <a href="application_form_analog.html">申し込み</a></li>
-                          <li><a href="hikari_collaboration.html">光コラボレーション比較</a></li>
+                          <li><a href="https://kachibon.work/lightning/hikari_collaboration.html">光コラボレーション比較</a></li>
                           <!-- <li><a href="application_form_docomohikari.html">ドコモ光お申し込み</a></li> -->
                         </ul>
                       </li>
