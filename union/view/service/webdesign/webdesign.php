@@ -1,5 +1,5 @@
 <?php
-include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/header.php'); ?>
+include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/header.php'); ?>
 
 </header>
 <div class="container mt_120 mb_120 sp_mt_80">
@@ -22,4 +22,4 @@ include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/header.php'); ?>
   </div>
 </div>
 
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/footer.php'); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/footer.php'); ?>

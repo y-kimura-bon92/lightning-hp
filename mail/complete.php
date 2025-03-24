@@ -60,7 +60,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
 
 ?>
 
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/header.php'); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/header.php'); ?>
 
 </header>
 <!-- お問い合わせ完了画面コンテンツ -->
@@ -98,4 +98,4 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
   
 </div>
 
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/footer.php'); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/footer.php'); ?>

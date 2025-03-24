@@ -88,7 +88,7 @@ $honbun30 = "   {$CARDSEC}\n\n";
 mb_language("japanese");
 mb_internal_encoding("UTF-8");
 
-$mail_to = "info@union-co.jp";
+$mail_to = "isp@union-co.jp";
 $mail_subject = "UNION-ISP申し込みフォームより";
 $mail_body = $honbun1.$honbun2.$honbun3.$honbun4.$honbun5.$honbun6.$honbun7.$honbun8.$honbun9.$honbun10.$honbun11.$honbun12.$honbun13.$honbun14.$honbun15.$honbun16.$honbun17.$honbun18.$honbun19.$honbun20.$honbun21.$honbun22.$honbun23.$honbun24.$honbun25.$honbun26.$honbun27.$honbun28.$honbun29.$honbun30;
 $mail_header = "form:".$EMAIL;
@@ -98,7 +98,7 @@ $mailsend = mb_send_mail($mail_to, $mail_subject, $mail_body, $mail_header);
 session_destroy()
 ?>
 
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/header.php'); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/header.php'); ?>
 
 </header>
 <!-- お問い合わせ完了画面コンテンツ -->
@@ -124,4 +124,4 @@ session_destroy()
   
 </div>
 
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/footer.php'); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/footer.php'); ?>

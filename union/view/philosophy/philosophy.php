@@ -1,5 +1,5 @@
 <?php
-include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/header.php'); ?>
+include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/header.php'); ?>
 
 </header>
 <!-- ページコンテンツ -->
@@ -62,4 +62,4 @@ include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/header.php'); ?>
 </div>
 
 
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/footer.php'); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/footer.php'); ?>

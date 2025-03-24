@@ -55,7 +55,7 @@ if ($TEL == "") {
 
 ?>
 
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/header.php'); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/header.php'); ?>
 
 </header>
 <!-- お問い合わせ確認画面コンテンツ -->
@@ -112,4 +112,4 @@ if ($TEL == "") {
   </div>
 </div>
 
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/footer.php'); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/footer.php'); ?>

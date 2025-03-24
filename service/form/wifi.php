@@ -12,7 +12,7 @@ const SPLIT_LAYOUT_FIXED = <<<EOF
 EOF;
 ?>
 
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/header.php'); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/header.php'); ?>
 
 <!-- お申し込みコンテンツ -->
 <div class="container mt_120 mb_120 sp_mt_80">
@@ -277,4 +277,4 @@ EOF;
   </div>
 </div>
 
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/lightning/union/common/footer.php'); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/union/common/footer.php'); ?>
